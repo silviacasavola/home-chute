@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-    <!-- <link rel='stylesheet' type='text/css' href='assets/css/home.css' media="screen and (min-width:992px)" data-skrollr-stylesheet > -->
-    <!-- <link rel='stylesheet' type='text/css' href='assets/css/common.css' media="screen and (min-width:992px)" data-skrollr-stylesheet > -->
+    <link rel='stylesheet' type='text/css' href='assets/css/home.css' media="screen and (min-width:992px)" data-skrollr-stylesheet >
+    <link rel='stylesheet' type='text/css' href='assets/css/common.css' media="screen and (min-width:992px)" data-skrollr-stylesheet >
     <link rel='stylesheet' type='text/css' href='assets/css/mobile-portrait/home-mp.css' media="screen and (orientation:portrait) and (max-width:991px)" data-skrollr-stylesheet>
     <link rel='stylesheet' type='text/css' href='assets/css/mobile-portrait/common-mp.css' media="screen and (orientation:portrait) and (max-width:991px)" data-skrollr-stylesheet>
     <link rel="stylesheet" href="https://use.typekit.net/ttj2hjf.css">
@@ -18,12 +18,12 @@
 
 <body>
 <div id="header">
-<span onclick='openAbout()'class='header-btn' id='about-btn' data-0="display: none" data-200="display: block"> About</span>
-<span onclick='openRan()'class='header-btn' id='ranking-btn'  data-0="display: none" data-200="display: block">Ranking</span>
+<span onclick='openAbout()'class='header-btn' id='about-btn'> About</span>
+<span onclick='openRan()'class='header-btn' id='ranking-btn'>Ranking</span>
 <div id='title'>PASTA CHUTE</div>
 </div>
 
-<div id="animated-background" style="width: 100vw; height: 200vh; z-index: -50; position: absolute; top: 0; left: 0"</div>
+<div id="animated-background" style="width: 100vw; height: 200vh; z-index: -50; position: absolute; top: 0; left: 0"></div>
 
 <div id="page-content">
 <div class="paragraph" id="p1">Pasta is good<br></div>
@@ -36,23 +36,23 @@
 <div class="paragraph" id="p8">Are you ready?</div>
 </div>
 
-<img id='scroll' src='assets/img/freccia.png' data-1900="opacity:1" data-2000="opacity: 0" >
+<img id='scroll' src='assets/img/freccia.png'>
 
-<a href="poll.html" id="skip-btn" data-1900="opacity:1" data-2000="opacity: 0">Skip</a>
+<a id="skip-btn" href="poll.html">Skip</a>
 
 <!-- PLAY BUTTON -->
-<a href="poll.html" id="play-btn" data-2000="display: none" data-2010="display: block" style="z-index: 100">YES</a>
+<a href="poll.html" id="play-btn">YES</a>
 
 
-<!--ABOUT!!!!!!!!!!!!-->
-<div id="about" class="overlay">
+<!--ABOUT -->
+<div id="about-overlay" class="overlay">
 
 <!-- Button to close the overlay navigation -->
-<a  class="closebtn" onclick="closeAbout()"><img id='close'src='assets/img/clsbtn.png'width='3% height=3%' ></a>
+<a  class="closebtn" onclick="closeAbout()"><img class='close-img'src='assets/img/clsbtn.png'></a>
 
 <!-- Overlay content -->
-<div class="about-content">
-<p id='about-header'>About</p>
+<div class="overlay-content">
+<p id='about-header' class="overlay-header">About</p>
 <p id='about-text'>Pasta chute is a project developed for the course of Creative Coding of Politecnico di Milano. Pasta is good, but which is the best? Our team wants to investigate the most controversial subject in our country. </p>
 <img onclick='showCredits()'id='freccia' src='assets/img/freccia.png' >
 <div id='crediti'>
@@ -63,13 +63,14 @@ Politecnico di Milano</p>
 </div>
 
 </div>
-<!--RANKING!!!!!!!!!!!!!!-->
-<div id="ranking" class="overlay2">
-<a  class="closebtn2" onclick="closeRan()"><img id='close2' src='assets/img/clsbtn.png'width='3% height=3%'></a>
+
+<!--RANKING -->
+<div id="ranking-overlay" class="overlay">
+<a  class="closebtn" onclick="closeRan()"><img class='close-img' src='assets/img/clsbtn.png'></a>
 
 <!-- Overlay content -->
 <div class="ranking-content">
-<p id='ranking-header'>Ranking</p>
+<p id='ranking-header'  class="overlay-header">Ranking</p>
 
 </div>
 </div>

@@ -3,19 +3,17 @@
   --mobile-topmargin: 2vw;
 }
 
-#title {
-  -skrollr-animation-name:resizeTitlemobile;
-}
+#title {-skrollr-animation-name:resizeTitle;}
 
-  @-skrollr-keyframes resizeTitlemobile {
-  0  {
-      margin-top: 20vh;
-      font-size: 10vw;
+  @-skrollr-keyframes resizeTitle {
+  0  {margin-top: 20vh; font-size: 2vw;}
+  400	{margin-top: 0vh; font-size: 7vw;}
   }
-  400	{
-    margin-top: 0vh;
-    font-size: 7vw;
-  }
+
+#about-btn, #ranking-btn {-skrollr-animation-name: displayMenu;}
+  @-skrollr-keyframes displayMenu {
+  0  {opacity:0}
+  400	{opacity:1}
   }
 
 #page-content {
@@ -31,45 +29,6 @@
   font-size: 5vh;
   font-style: italic;
   text-align: center;
-}
-
-#scroll {
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  width: 30vw;
-  height: 30;
-margin: auto;
-z-index: 120;
-transform:translate(-50%, 0);
-}
-
-#play-btn {
-  position: fixed;
-  font-size: 5vw;
-  border-style: groove;
-  border-size: 10px;
-  padding: 1vw;
-  bottom: 10vh;
-  text-decoration: none;
-  left: 50%;
-  color: black;
-  font-family: neue-haas-grotesk-display;
-  transform:translate(-50%, 0);
-  transform-origin: center;
-}
-
-
-#skip-btn {
-  position: fixed;
-  font-size: 3vh;
-  bottom: 20vh;
-  color: black;
-  font-family: baskerville-urw;
-  font-style: italic;
-  margin-left: 50vw;
-  transform:translate(-50%, 0%);
-  transform-origin: center;
 }
 
 /* Pasta is good */
@@ -171,3 +130,68 @@ line-height:2;
 4600  { opacity: 0; margin-top:3vh }
 4800	{ opacity: 1; margin-top:0vh}
 }
+
+
+/* SCROLL SUGGESTION */
+#scroll {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  width: 30vw;
+  height: 30;
+margin: auto;
+z-index: 120;
+transform:translate(-50%, 0);
+-skrollr-animation-name: scroll-suggestion;
+}
+
+@-skrollr-keyframes scroll-suggestion {
+4400  {opacity: 1}
+4600	{opacity: 0}
+}
+
+
+/* SKIP INTRO */
+#skip-btn {
+  position: fixed;
+  font-size: 3vh;
+  bottom: 20vh;
+  color: black;
+  font-family: baskerville-urw;
+  font-style: italic;
+  margin-left: 50vw;
+  transform:translate(-50%, 0%);
+  transform-origin: center;
+
+
+  z-index: 120;
+
+  -skrollr-animation-name:skip;
+  }
+
+  @-skrollr-keyframes skip {
+  4400  {opacity: 1}
+  4600	{opacity: 0}
+  }
+
+
+  /* PLAY BUTTON */
+  #play-btn {
+    position: fixed;
+    font-size: 5vw;
+    border-style: groove;
+    border-size: 10px;
+    padding: 1vw;
+    bottom: 10vh;
+    text-decoration: none;
+    left: 50%;
+    color: black;
+    font-family: neue-haas-grotesk-display;
+    transform:translate(-50%, 0);
+    transform-origin: center;-skrollr-animation-name: play-btn;
+    }
+
+    @-skrollr-keyframes play-btn {
+    4600  {opacity: 0}
+    4800	{opacity: 1}
+    }
