@@ -10,7 +10,7 @@
   @-skrollr-keyframes resizeTitlemobile {
   0  {
       margin-top: 20vh;
-      font-size: 12vw;
+      font-size: 10vw;
   }
   400	{
     margin-top: 0vh;
