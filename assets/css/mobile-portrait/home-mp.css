@@ -3,6 +3,21 @@
   --mobile-topmargin: 2vw;
 }
 
+#title {
+  -skrollr-animation-name:resizeTitlemobile;
+}
+
+  @-skrollr-keyframes resizeTitlemobile {
+  0  {
+      margin-top: 20vh;
+      font-size: 12vw;
+  }
+  400	{
+    margin-top: 0vh;
+    font-size: 7vw;
+  }
+  }
+
 #page-content {
   position: fixed;
   width: 100%;
@@ -64,10 +79,10 @@ line-height:2;
 }
 
 @-skrollr-keyframes p1 {
-100  { opacity: 0; margin-top:3vh }
-200	{ opacity: 1; margin-top:0vh}
-600  {opacity: 1; margin-top:0vh}
-700	{opacity:0; margin-top:-3vh }
+200  { opacity: 0; margin-top:3vh }
+400	{ opacity: 1; margin-top:0vh}
+1200  {opacity: 1; margin-top:0vh}
+1400	{opacity:0; margin-top:-3vh }
 }
 
 /* but which is the best? */
@@ -77,10 +92,10 @@ line-height:2;
 }
 
 @-skrollr-keyframes p2 {
-300  { opacity: 0; margin-top:3vh }
-400	{ opacity: 1; margin-top:0vh}
-600  {opacity: 1; margin-top:0vh}
-700	{opacity:0; margin-top:-3vh }
+400  { opacity: 0; margin-top:3vh }
+800	{ opacity: 1; margin-top:0vh}
+1200  {opacity: 1; margin-top:0vh}
+1400	{opacity:0; margin-top:-3vh }
 }
 
 /* You're about to enter the biggest pasta poll in history */
@@ -89,10 +104,10 @@ line-height:2;
 }
 
 @-skrollr-keyframes p3 {
-700  { opacity: 0; margin-top:3vh }
-800	{ opacity: 1; margin-top:0vh}
-1000  {opacity: 1; margin-top:0vh}
-1100	{opacity:0; margin-top:-3vh }
+1400  { opacity: 0; margin-top:3vh }
+1600	{ opacity: 1; margin-top:0vh}
+2000  {opacity: 1; margin-top:0vh}
+2200	{opacity:0; margin-top:-3vh }
 }
 
 /* Get prepared */
@@ -102,10 +117,10 @@ line-height:2;
 }
 
 @-skrollr-keyframes p4 {
-1100  { opacity: 0; margin-top:3vh }
-1200	{ opacity: 1; margin-top:0vh}
-2200  {opacity: 1; margin-top:0vh}
-2300	{opacity:0; margin-top:-3vh }
+2200  { opacity: 0; margin-top:3vh }
+2400	{ opacity: 1; margin-top:0vh}
+4400  {opacity: 1; margin-top:0vh}
+4600	{opacity:0; margin-top:-3vh }
 }
 
 /* to be fierce */
@@ -115,10 +130,10 @@ line-height:2;
 }
 
 @-skrollr-keyframes p5 {
-1100  { opacity: 0; margin-top:3vh }
-1200	{ opacity: 1; margin-top:0vh}
-1400  {opacity: 1; margin-top:0vh}
-1500	{opacity:0; margin-top:-3vh }
+2200  { opacity: 0; margin-top:3vh }
+2400	{ opacity: 1; margin-top:0vh}
+2800  {opacity: 1; margin-top:0vh}
+3000	{opacity:0; margin-top:-3vh }
 }
 
 /* to be fast */
@@ -128,10 +143,10 @@ line-height:2;
 }
 
 @-skrollr-keyframes p6 {
-1500  { opacity: 0; margin-top:3vh }
-1600	{ opacity: 1; margin-top:0vh}
-1800  {opacity: 1; margin-top:0vh}
-1900	{opacity:0; margin-top:-3vh }
+3000  { opacity: 0; margin-top:3vh }
+3200	{ opacity: 1; margin-top:0vh}
+3600  {opacity: 1; margin-top:0vh}
+3800	{opacity:0; margin-top:-3vh }
 }
 
 /* to click */
@@ -141,10 +156,10 @@ line-height:2;
 }
 
 @-skrollr-keyframes p7 {
-1900  { opacity: 0; margin-top:3vh }
-2000	{ opacity: 1; margin-top:0vh}
-2200  {opacity: 1; margin-top:0vh}
-2300	{opacity:0; margin-top:-3vh }
+3800  { opacity: 0; margin-top:3vh }
+4000	{ opacity: 1; margin-top:0vh}
+4400  {opacity: 1; margin-top:0vh}
+4600	{opacity:0; margin-top:-3vh }
 }
 
 /* Are you ready? */
@@ -153,6 +168,6 @@ line-height:2;
 }
 
 @-skrollr-keyframes p8 {
-2300  { opacity: 0; margin-top:3vh }
-2400	{ opacity: 1; margin-top:0vh}
+4600  { opacity: 0; margin-top:3vh }
+4800	{ opacity: 1; margin-top:0vh}
 }
