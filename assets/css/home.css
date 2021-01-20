@@ -25,10 +25,11 @@
 .paragraph {
   width: 100%;
   position: inherit;
+  font-family: baskerville-urw;
+  font-style: italic;
   top: 50vh;
   transform:translate(0, -50%);
   font-size: 5vh;
-  font-style: italic;
   text-align: center;
 }
 
