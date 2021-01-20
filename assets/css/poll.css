@@ -1,0 +1,24 @@
+#poll {
+  /* background: red; */
+  width: 100vw;
+  height: 100vh;
+}
+
+#warning-message {
+position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background: red;
+  z-index: 50;
+}
+
+@media (min-width: 992px) {
+  #warning-message {display: none;}
+}
+
+@media only screen and (orientation:portrait){
+  #warning-message {display:block; }
+  }
+  @media only screen and (orientation:landscape){
+  #warning-message { display:none; }
+  }

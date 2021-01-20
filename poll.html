@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="p5.min.js"></script>
+    <script src="p5.sound.min.js"></script>
+  <script language="javascript" type="text/javascript" src="libraries/matter.js"></script>
+    <script src="sketch.js"></script>
+  <script language="javascript" type="text/javascript" src="box.js"></script>
+  <script language="javascript" type="text/javascript" src="box2.js"></script>
+    <link rel='stylesheet' type='text/css' href='index.css'>
+    <link rel='stylesheet' type='text/css' href='poll.css'>
+    <link rel="stylesheet" href="https://use.typekit.net/ttj2hjf.css">
+
+<div id="header">
+<span onclick='openAbout()'class='header-button' id='header-about'> About</span>
+<span onclick='openRan()'class='header-button' id='header-ranking'>Ranking</span>
+<div id='div-title'><p class='title'> PASTA CHUTE</p></div>
+</div>
+
+<!-- warning MESSAGE -->
+<div id="warning-message">This website is only viewable in landscape mode</div>
+
+<!-- POLL -->
+<div id="poll"></div>
+
+
+<!--ABOUT!!!!!!!!!!!!-->
+<div id="about" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+  <a  class="closebtn" onclick="closeAbout()"><img id='close'src='clsbtn.png'width='3% height=3%' ></a>
+
+  <!-- Overlay content -->
+  <div class="about-content">
+    <p id='about-header'>About</p>
+<p id='about-text'>Pasta chute is a project developed in the course of creative coding in Politecnico di Milano. Pasta is good, but which is the best? Our team wants to investigate the most trivial subject of our country. </p>
+<img onclick='showCredits()'id='freccia' src='freccia.png' >
+<div id='crediti'>
+<p id='crediti-text'>Martina Bracchi - Silvia Casavola - Dario Faudella - Manuel Reale - Donato Renzulli<br>
+Politecnico di Milano</p>
+</div>
+
+  </div>
+
+</div>
+
+<!--RANKING!!!!!!!!!!!!!!-->
+<div id="ranking" class="overlay2">
+<a  class="closebtn2" onclick="closeRan()"><img id='close2' src='clsbtn.png'width='3% height=3%'></a>
+
+<!-- Overlay content -->
+<div class="ranking-content">
+  <p id='ranking-header'>Ranking</p>
+
+</div>
+
+</div>
+
+  </head>
+  <body>
+  </body>
+</html>

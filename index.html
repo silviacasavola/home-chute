@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <link rel='stylesheet' type='text/css' href='assets/css/home.css' media="screen and (min-width:992px)" data-skrollr-stylesheet >
+    <link rel='stylesheet' type='text/css' href='assets/css/mobile-portrait/home-mp.css' media="screen and (orientation:portrait) and (max-width:991px)" data-skrollr-stylesheet>
+    <link rel="stylesheet" href="https://use.typekit.net/ttj2hjf.css">
+    <script src="assets/js/p5.min.js"></script>
+    <!-- <script src="assets/js/home.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  </head>
+
+<body>
+<div id="header">
+<span onclick='openAbout()'class='header-btn' id='about-btn' data-0="display: none" data-200="display: block"> About</span>
+<span onclick='openRan()'class='header-btn' id='ranking-btn'  data-0="display: none" data-200="display: block">Ranking</span>
+<div id='title'>PASTA CHUTE</div>
+</div>
+
+<div id="animated-background" style="width: 100vw; height: 200vh; z-index: -50; position: absolute; background: red; top: 0; left: 0"</div>
+
+<!-- <div id="page-content">
+<div class="paragraph" id="p1" data-100="opacity: 0" data-200="opacity: 1" data-600="opacity: 1" data-700="opacity: 0" style="line-height:2">Pasta is good<br></div>
+<div class="paragraph" id="p2" data-300="opacity: 0" data-400="opacity: 1" data-600="opacity: 1" data-700="opacity: 0" style="line-height:2"><br>but which is the best?</div>
+<div class="paragraph" id="p3" data-700="opacity: 0" data-800="opacity: 1" data-1000="opacity: 1" data-1100="opacity: 0">You're about to enter the biggest pasta poll in history.</div>
+<div class="paragraph" id="p4" data-1100="opacity: 0" data-1200="opacity: 1" data-1300="opacity: 1" data-1400="opacity: 0">Prepare to be fierce.</div>
+<div class="paragraph" id="p5" data-1400="opacity: 0" data-1500="opacity: 1" data-1600="opacity: 1" data-1700="opacity: 0">Prepare to be fast.</div>
+<div class="paragraph" id="p6" data-1700="opacity: 0" data-1800="opacity: 1" data-1900="opacity: 1" data-2000="opacity: 0">Prepare to click.</div>
+<div class="paragraph" id="p7" data-2000="opacity: 0" data-2100="opacity: 1" data-2200="opacity: 1" data-2300="opacity: 0">Are you ready?</div>
+</div> -->
+
+<div id="page-content">
+<div class="paragraph" id="p1" data-100="opacity: 0; margin-top:3vh" data-200="opacity: 1; margin-top:0vh" data-600="opacity: 1; margin-top:0vh" data-700="opacity: 0; margin-top:-3vh" style="line-height:2">Pasta is good<br></div>
+<div class="paragraph" id="p2" data-300="opacity: 0; margin-top:3vh" data-400="opacity: 1; margin-top:0vh" data-600="opacity: 1; margin-top:0vh" data-700="opacity: 0; margin-top:-3vh" style="line-height:2"><br>but which is the best?</div>
+<div class="paragraph" id="p3" data-700="opacity: 0; margin-top:3vh" data-800="opacity: 1; margin-top:0vh" data-1000="opacity: 1; margin-top:0vh" data-1100="opacity: 0; margin-top:-3vh">You're about to enter the biggest pasta poll in history.</div>
+<div class="paragraph" id="p4" data-1100="opacity: 0; margin-top:3vh" data-1200="opacity: 1; margin-top:0vh" data-1900="opacity: 1; margin-top:0vh" data-2000="opacity: 0; margin-top:-3vh" style="line-height:2">Get prepared<br></div>
+<div class="paragraph" id="p4" data-1100="opacity: 0; margin-top:3vh" data-1200="opacity: 1; margin-top:0vh" data-1300="opacity: 1" data-1400="opacity: 0" style="line-height:2"><br>to be fierce.</div>
+<div class="paragraph" id="p5" data-1400="opacity: 0; margin-top:3vh" data-1500="opacity: 1;  margin-top:0vh" data-1600="opacity: 1" data-1700="opacity: 0" style="line-height:2"><br>to be fast.</div>
+<div class="paragraph" id="p6" data-1700="opacity: 0; margin-top:3vh" data-1800="opacity: 1; margin-top:0vh" data-1900="opacity: 1; margin-top:0vh" data-2000="opacity: 0; margin-top:-3vh" style="line-height:2"><br>to click.</div>
+<div class="paragraph" id="p7" data-2000="opacity: 0; margin-top:3vh" data-2100="opacity: 1; margin-top:0vh" data-2200="opacity: 1">Are you ready?</div>
+</div>
+
+<img id='scroll' src='assets/img/freccia.png' data-1900="opacity:1" data-2000="opacity: 0" >
+
+<a href="poll.html" id="skip-btn" data-1900="opacity:1" data-2000="opacity: 0">Skip</a>
+
+<!-- PLAY BUTTON -->
+<a href="poll.html" id="play-btn" data-2000="display: none" data-2010="display: block" style="z-index: 100">YES</a>
+
+
+<!--ABOUT!!!!!!!!!!!!-->
+<div id="about" class="overlay">
+
+<!-- Button to close the overlay navigation -->
+<a  class="closebtn" onclick="closeAbout()"><img id='close'src='assets/img/clsbtn.png'width='3% height=3%' ></a>
+
+<!-- Overlay content -->
+<div class="about-content">
+<p id='about-header'>About</p>
+<p id='about-text'>Pasta chute is a project developed for the course of Creative Coding of Politecnico di Milano. Pasta is good, but which is the best? Our team wants to investigate the most controversial subject in our country. </p>
+<img onclick='showCredits()'id='freccia' src='assets/img/freccia.png' >
+<div id='crediti'>
+<p id='crediti-text'>Martina Bracchi - Silvia Casavola - Dario Faudella - Manuel Reale - Donato Renzulli<br>
+Politecnico di Milano</p>
+</div>
+
+</div>
+
+</div>
+<!--RANKING!!!!!!!!!!!!!!-->
+<div id="ranking" class="overlay2">
+<a  class="closebtn2" onclick="closeRan()"><img id='close2' src='assets/img/clsbtn.png'width='3% height=3%'></a>
+
+<!-- Overlay content -->
+<div class="ranking-content">
+<p id='ranking-header'>Ranking</p>
+
+</div>
+</div>
+
+<!-- SKROLL -->
+	<script src="assets/js/skrollr.stylesheets.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src="assets/js/skrollr.min.js"></script>
+	<script type="text/javascript">
+	var s = skrollr.init(
+    smoothScrolling=true
+  );
+	</script>
+</body>
+</html>
