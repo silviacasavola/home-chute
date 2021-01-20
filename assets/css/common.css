@@ -1,0 +1,257 @@
+body {
+  max-width: 100vw;
+  max-height: 600vh;
+  margin: none;
+  padding: none;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+
+
+#header{
+  width: 100%;
+  /* height: 10vh; */
+  /* border: solid; */
+  position: fixed;
+  z-index: 100;
+}
+
+.header-btn{
+margin-top: 2%;
+/* position: fixed; */
+font-family: baskerville-urw;
+font-style: italic;
+font-weight: 400;
+color: black;
+font-size: 3vh;
+z-index: 10;
+}
+
+#ranking-btn{
+right: 2%;
+position: fixed;
+}
+
+#about-btn{
+  left: 2%;
+  position: fixed;
+}
+
+
+#title{
+  margin: auto;
+  font-family: neue-haas-grotesk-display;
+  font-style: normal;
+  font-weight: 600;
+  text-align: center;
+  color: black;
+z-index: 10;
+
+-skrollr-animation-name:resizeTitle;
+}
+
+@-skrollr-keyframes resizeTitle {
+0  {
+    margin-top: 30vh;
+    font-size: 15vh
+}
+200	{
+  margin-top: 0vh;
+  font-size: 10vh;
+}
+}
+
+/* The Overlay (background) */
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0;
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 0;
+  top: 0;
+  background-color: white; /* Black fallback color */
+  background-color: rgba(255,255,255, 1); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.about-content {
+  position: absolute;
+  top: 0%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  height: 100%;
+  margin-top: 0vh; /* 30px top margin to avoid conflict with the close button on smaller screens */
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ranking-content{
+  position: absolute;
+  top: 0%; /* 25% from the top */
+  width: 100%; /* 100% width */
+  height: 100%;
+  margin-top: 0vh; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  z-index: 100;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+
+
+.overlay2 {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 100%;
+  position: fixed; /* Stay in place */
+  z-index: 100; /* Sit on top */
+  left: 100%;
+  top: 0;
+  background-color: white; /* Black fallback color */
+  background-color: rgba(255,255,255, 1); /* Black w/opacity */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+
+.overlay2 a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay2 a:hover, .overlay2 a:focus {
+  color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+
+.closebtn{
+  text-align:right;
+}
+.closebtn2{
+  text-align:right;
+}
+
+.overlay2 .closebtn2 {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  z-index: 100;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+  .overlay2 a {font-size: 20px}
+  .overlay2 .closebtn2 {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+#about-header{
+  font-size: 20vh;
+  font-family: baskerville-urw;
+  font-style: italic;
+  font-weight: 400;
+  top: 0%;
+  left: 10vh;
+  display: block;
+  position: absolute;
+  margin: 0
+}
+#about-text{
+  top: 20%;
+  position: relative;
+  font-family: neue-haas-grotesk-display;
+  font-weight: 400;
+  font-size: 10vh;
+}
+
+#close{
+  right: 3%;
+  top: 5%;
+  z-index: 125;
+}
+#close2{
+  right: 3%;
+  top: 5%;
+  z-index: 126;
+}
+
+#ranking-header{
+  font-size: 20vh;
+  font-family: baskerville-urw;
+  font-style: italic;
+  font-weight: 400;
+  top: 0%;
+  left: 10vh;
+  display: block;
+  position: absolute;
+  margin: 0
+}
+
+
+#freccia{
+  position: relative;
+  top: 5%;
+  width: 15vw;
+  height: 15vw;
+margin: auto;
+z-index: 120;
+}
+#crediti{
+display: none;
+margin-bottom: 50vh;
+text-align: left;
+}
+
+
+#crediti-text{
+  top: 0%;
+  left: 10vh;
+  position: relative;
+  font-family: baskerville-urw;
+  font-style: italic;
+  font-weight: 200;
+  font-size: 5vh;
+}
