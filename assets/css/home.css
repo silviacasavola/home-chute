@@ -51,3 +51,103 @@ transform:translate(-50%, 0);
   transform:translate(-50%, 0);
   transform-origin: center;
 }
+
+/* Pasta is good */
+#p1{
+line-height:2;
+-skrollr-animation-name:p1;
+}
+
+@-skrollr-keyframes p1 {
+100  { opacity: 0; margin-top:3vh }
+200	{ opacity: 1; margin-top:0vh}
+600  {opacity: 1; margin-top:0vh}
+700	{opacity:0; margin-top:-3vh }
+}
+
+/* but which is the best? */
+#p2{
+line-height:2;
+-skrollr-animation-name:p2;
+}
+
+@-skrollr-keyframes p2 {
+300  { opacity: 0; margin-top:3vh }
+400	{ opacity: 1; margin-top:0vh}
+600  {opacity: 1; margin-top:0vh}
+700	{opacity:0; margin-top:-3vh }
+}
+
+/* You're about to enter the biggest pasta poll in history */
+#p3{
+-skrollr-animation-name:p3;
+}
+
+@-skrollr-keyframes p3 {
+700  { opacity: 0; margin-top:3vh }
+800	{ opacity: 1; margin-top:0vh}
+1000  {opacity: 1; margin-top:0vh}
+1100	{opacity:0; margin-top:-3vh }
+}
+
+/* Get prepared */
+#p4{
+line-height:2;
+-skrollr-animation-name:p4;
+}
+
+@-skrollr-keyframes p4 {
+1100  { opacity: 0; margin-top:3vh }
+1200	{ opacity: 1; margin-top:0vh}
+2200  {opacity: 1; margin-top:0vh}
+2300	{opacity:0; margin-top:-3vh }
+}
+
+/* to be fierce */
+#p5{
+line-height:2;
+-skrollr-animation-name:p5;
+}
+
+@-skrollr-keyframes p5 {
+1100  { opacity: 0; margin-top:3vh }
+1200	{ opacity: 1; margin-top:0vh}
+1400  {opacity: 1; margin-top:0vh}
+1500	{opacity:0; margin-top:-3vh }
+}
+
+/* to be fast */
+#p6{
+line-height:2;
+-skrollr-animation-name:p6;
+}
+
+@-skrollr-keyframes p6 {
+1500  { opacity: 0; margin-top:3vh }
+1600	{ opacity: 1; margin-top:0vh}
+1800  {opacity: 1; margin-top:0vh}
+1900	{opacity:0; margin-top:-3vh }
+}
+
+/* to click */
+#p7{
+line-height:2;
+-skrollr-animation-name:p7;
+}
+
+@-skrollr-keyframes p7 {
+1900  { opacity: 0; margin-top:3vh }
+2000	{ opacity: 1; margin-top:0vh}
+2200  {opacity: 1; margin-top:0vh}
+2300	{opacity:0; margin-top:-3vh }
+}
+
+/* Are you ready? */
+#p8{
+-skrollr-animation-name:p8;
+}
+
+@-skrollr-keyframes p8 {
+2300  { opacity: 0; margin-top:3vh }
+2400	{ opacity: 1; margin-top:0vh}
+}
