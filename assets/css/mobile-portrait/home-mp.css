@@ -3,6 +3,11 @@
   --mobile-topmargin: 2vw;
 }
 
+body {
+  min-height: 4800;
+  max-height: 4800;
+}
+
 #title {-skrollr-animation-name:resizeTitle;}
 
   @-skrollr-keyframes resizeTitle {
