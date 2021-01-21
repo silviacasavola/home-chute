@@ -27,7 +27,7 @@
   position: inherit;
   font-family: baskerville-urw;
   font-style: italic;
-  top: 50vh;
+  top: 45vh;
   transform:translate(0, -50%);
   font-size: 5vh;
   text-align: center;
@@ -180,7 +180,7 @@ transform:translate(-50%, 0);
   position: fixed;
   font-size: 2vw;
   border-style: groove;
-  border-size: 10px;
+  border-width: 2px;
   padding: 1vw;
   bottom: 10vh;
   text-decoration: none;
@@ -189,6 +189,7 @@ transform:translate(-50%, 0);
   font-family: neue-haas-grotesk-display;
   transform:translate(-50%, 0);
   transform-origin: center;
+  z-index: 150;
   -skrollr-animation-name: play-btn;
   }
 

@@ -4,8 +4,8 @@
 }
 
 body {
-  min-height: 4800;
-  max-height: 4800;
+  min-height: 4800px;
+  max-height: 4800px;
 }
 
 #title {-skrollr-animation-name:resizeTitle;}
