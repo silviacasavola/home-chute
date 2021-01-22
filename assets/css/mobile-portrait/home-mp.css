@@ -152,7 +152,7 @@ z-index: 120;
 transform:translate(-50%, 0);
 -skrollr-animation-name: scroll-suggestion;
 
--webkit-animation: bounce 2s 2;
+-webkit-animation: bounce 2s infinite;
 }
 
 @-skrollr-keyframes scroll-suggestion {

@@ -79,7 +79,7 @@ height: auto;
 }
 
 .overlay-header{
-  position: inherit;
+  position: absolute;
   font-size: 15vw;
   font-family: baskerville-urw;
   font-style: italic;
@@ -90,7 +90,7 @@ height: auto;
 }
 
 .closebtn{
-  position: inherit;
+  position: absolute;
   right: var(--mobile-margin);
   top: var(--mobile-margin);
   z-index: var(--overlay-layer);
@@ -109,7 +109,7 @@ height: auto;
 }
 
 #about-text{
-  position: inherit;
+  position: absolute;
   top: 20vh;
   width: 92vw;
   font-family: neue-haas-grotesk-display;
@@ -128,7 +128,7 @@ font-style: italic;
 
 #credits {
 display: none;
-position: inherit;
+position: absolute;
 bottom: var(--mobile-margin);
 }
 
@@ -147,7 +147,7 @@ bottom: var(--mobile-margin);
 }
 
 #troppo-italiano {
-  position: inherit;
+  position: absolute;
   bottom: 30vh;
   width: 20vw;
   left: 40vw;
