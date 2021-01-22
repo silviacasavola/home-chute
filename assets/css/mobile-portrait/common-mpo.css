@@ -48,7 +48,6 @@ font-weight: 400;
 color: black;
 font-size: 5vw;
 display: inline-flex;
-z-index: var(--header-layer);
 }
 
 #about-btn{left: var(--mobile-margin);}
@@ -71,12 +70,10 @@ z-index: var(--header-layer);
 }
 
 .overlay-content {
-top: var(--margin);
-bottom: var(--margin);
-left: var(--margin);
-right: var(--margin);
-position: absolute;
-height: auto;
+  margin-left: var(--mobile-margin);
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .overlay-header{
@@ -110,9 +107,9 @@ height: auto;
 }
 
 #about-text{
+  width: 92vw;
   position: absolute;
   top: 20vh;
-  width: 92vw;
   font-family: neue-haas-grotesk-display;
   font-weight: 400;
   font-size: 6vw;
