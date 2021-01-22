@@ -1,3 +1,16 @@
+// var angle = 0;
+//
+// function setup() {
+// frameRate(10);
+// }
+//
+// function draw() {
+//   angle++;
+//   select("#scroll").style.bottom = sin(angle);
+//   let scroll = select("#scroll");
+//   scroll.position(windowWidth/2 - scroll.width/2, windowHeight - sin(angle)*50)
+// }
+
 function openAbout() {
   document.getElementById("about-overlay").style.width = "100%";
 }
@@ -21,10 +34,19 @@ function closeRan() {
 }
 
 function showCredits(){
-  console.log('crediti')
- x =  document.getElementById('crediti');
-if(x.style.display === 'none'){
-  x.style.display ='block'
-}
-else {x.style.display = 'none'}
+ credits =  document.getElementById('credits');
+ troppoitaliano = document.getElementById("troppo-italiano");
+ // pagina = document.getElementById("about-overlay");
+
+
+if (credits.style.display === 'block') {
+   credits.style.display = 'none';
+   troppoitaliano.style.animationPlayState = "running";
+   troppoitaliano.style.transform = "rotate(0deg)";
+ }
+else {
+   credits.style.display ='block';
+   troppoitaliano.style.animationPlayState= "paused";
+   troppoitaliano.style.transform = "rotate(-30deg)";
+   }
 }

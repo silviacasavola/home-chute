@@ -23,39 +23,37 @@ body::-webkit-scrollbar {
 #header{
   width: 100%;
   position: fixed;
+  top: 0;
+  height: 10vh;
   z-index: var(--header-layer);
+
+  display: flex;
 }
 
 .header-btn{
-margin-top: var(--margin);
+position: absolute;
+bottom: 0%;
 font-family: baskerville-urw;
 font-style: italic;
 font-weight: 400;
 color: black;
 font-size: 3vh;
-
+display: inline-flex;
 cursor: pointer;
 }
 
-#ranking-btn{
-right: var(--margin);
-position: fixed;
-}
+#about-btn {left: var(--margin);}
 
-#about-btn{
-  left: var(--margin);
-  position: fixed;
-}
+#ranking-btn {right: var(--margin);}
+
 
 
 #title{
   margin: auto;
   font-family: neue-haas-grotesk-display;
-  font-style: normal;
   font-weight: 600;
   text-align: center;
   color: black;
-  margin-top: 0vh;
   font-size: 10vh;
 }
 
@@ -64,24 +62,23 @@ position: fixed;
 
 /* OVERLAYS */
 .overlay {
-    height: 100%;
+    height: 100vh;
     position: fixed;
     z-index: var(--overlay-layer);
     top: 0;
     background-color: white;
     overflow-x: hidden;
+    /* overflow-y: scroll; */
     transition: 0.5s;
 }
 
-.overlay::-webkit-scrollbar {
-  display: none;
-}
-
 .overlay-content {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  text-align: center;
+top: var(--margin);
+bottom: var(--margin);
+left: var(--margin);
+right: var(--margin);
+position: absolute;
+height: auto;
 }
 
 .overlay-header{
@@ -90,15 +87,15 @@ position: fixed;
   font-family: baskerville-urw;
   font-style: italic;
   font-weight: 400;
-  top: 0%;
-  left: 10vh;
+  top: 0;
   margin: 0;
+  transform:translate(0, -29%);
 }
 
 .closebtn{
   position: absolute;
   right: var(--margin);
-  top: 5%;
+  top: var(--margin);
   z-index: var(--overlay-layer);
   cursor: pointer;
 }
@@ -116,39 +113,72 @@ position: fixed;
 }
 
 #about-text{
-  top: 20%;
   position: absolute;
+  top: 50vh;
+  width: 96vw;
+  transform:translate(0, -80%);
   font-family: neue-haas-grotesk-display;
   font-weight: 400;
-  font-size: 10vh;
+  font-size: 8vh;
+}
+
+.overlay a {
+color: black;}
+
+.overlay a:hover {
+color: red;
+font-style: italic;
 }
 
 
-#freccia{
-  position: absolute;
-  bottom: 0;
-  width: 15vw;
-  height: 15vw;
-  left: 50%;
-  transform:translate(-50%, 0%);
-  z-index: var(--overlay-layer);
-}
-
-#crediti{
+#credits {
 display: none;
-margin-bottom: 50vh;
-text-align: left;
+position: absolute;
+bottom: 0;
 }
 
-
-#crediti-text{
-  top: 0%;
-  left: 10vh;
-  position: relative;
+.credits-paragraph {
   font-family: baskerville-urw;
   font-style: italic;
   font-weight: 200;
-  font-size: 5vh;
+  font-size: 1.8vw;
+  cursor: pointer;
+  line-height: 0.6;
+}
+
+.credits-paragraph a {
+  text-decoration: none;
+}
+
+#troppo-italiano {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 7vw;
+  z-index: var(--overlay-layer);
+  cursor: pointer;
+
+  animation: troppo-italiana 1s infinite;
+  -webkit-animation: troppo-italiana 1s infinite;
+
+  -webkit-transition: -webkit-transform .1s;
+          transition:         transform .1s;
+}
+
+
+
+#troppo-italiano:hover, #troppo-italiano:focus {
+  animation-play-state: paused;
+
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+
+@keyframes troppo-italiana {
+  0% {bottom: 0vh}
+  50% {bottom: 4vh}
+  100% {bottom: 0vh}
 }
 
 

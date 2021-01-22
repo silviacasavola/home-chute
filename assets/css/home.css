@@ -136,14 +136,17 @@ line-height:2;
 /* SCROLL ARROW */
 #scroll {
   position: fixed;
+  padding-bottom: 8vh;
   bottom: 0;
   left: 50%;
-  width: 15vw;
-  height: 15vw;
+  width: 13vw;
 margin: auto;
 z-index: 120;
 transform:translate(-50%, 0);
+/* border: solid; */
 -skrollr-animation-name: scroll-suggestion;
+
+-webkit-animation: bounce 2s 2;
 }
 
 @-skrollr-keyframes scroll-suggestion {
@@ -151,6 +154,14 @@ transform:translate(-50%, 0);
 2300	{opacity: 0}
 }
 
+/* 0 {animation-play-state: running}
+200 {animation-play-state: paused} */
+
+@-webkit-keyframes bounce {
+  0%       { bottom:0vh; }
+  50%      { bottom:8vh; }
+  100%     {bottom:0vh;}
+}
 
 /* SKIP INTRO  */
 #skip-btn {
@@ -175,6 +186,10 @@ transform:translate(-50%, 0);
 2300	{opacity: 0}
 }
 
+#skip-btn:hover {
+  color: red;
+}
+
 /* PLAY BUTTON */
 #play-btn {
   position: fixed;
@@ -190,10 +205,10 @@ transform:translate(-50%, 0);
   transform:translate(-50%, 0);
   transform-origin: center;
   z-index: 150;
-  -skrollr-animation-name: play-btn;
+  -skrollr-animation-name: display-play;
   }
 
-  @-skrollr-keyframes play-btn {
-  2300  {opacity: 0}
-  2400	{opacity: 1}
+  @-skrollr-keyframes display-play {
+  0  {display: none}
+  2300	{display: block}
   }

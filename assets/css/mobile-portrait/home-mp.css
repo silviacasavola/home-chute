@@ -6,6 +6,7 @@
 body {
   min-height: 4800px;
   max-height: 4800px;
+  height: 4800px;
 }
 
 #title {-skrollr-animation-name:resizeTitle;}
@@ -140,10 +141,11 @@ line-height:2;
 /* SCROLL SUGGESTION */
 #scroll {
   position: fixed;
+  padding-bottom: var(--mobile-margin);
   bottom: 0;
   left: 50%;
   width: 30vw;
-  height: 30;
+  height: auto;
 margin: auto;
 z-index: 120;
 transform:translate(-50%, 0);

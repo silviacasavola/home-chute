@@ -19,63 +19,48 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
+
 #header{
   background-color: white;
   width: 100%;
-  padding-top: var(--mobile-topmargin);
   position: fixed;
-  z-index: 100;
-}
-
-#title{
-    margin: auto;
-    font-family: neue-haas-grotesk-display;
-    font-style: normal;
-    font-weight: 600;
-    text-align: center;
-    color: black;
-  z-index: 10;
-  font-size: 7vw;
-  margin-top: 0vh;
-}
-
-
-.header-btn{
-/* position: fixed; */
-font-family: baskerville-urw;
-font-style: italic;
-font-weight: 400;
-color: black;
-font-size: 5vw;
-z-index: 10;
-/* bottom: var(--mobile-margin); */
-}
-
-#ranking-btn{
-right: var(--mobile-margin);
-position: fixed;
-}
-
-#about-btn{
-left: var(--mobile-margin);
-position: fixed;
+  padding-top: var(--mobile-topmargin);
+  z-index: var(--header-layer);
 }
 
 
 #title{
   margin: auto;
   font-family: neue-haas-grotesk-display;
-  font-style: normal;
   font-weight: 600;
   text-align: center;
   color: black;
-z-index: 10;
+  font-size: 7vw;
 }
+
+.header-btn{
+position: absolute;
+bottom: 0%;
+font-family: baskerville-urw;
+font-style: italic;
+font-weight: 400;
+color: black;
+font-size: 5vw;
+display: inline-flex;
+}
+
+#about-btn{left: var(--mobile-margin);}
+
+#ranking-btn{right: var(--mobile-margin);}
+
+
+
 
 
 /* OVERLAYS */
 .overlay {
-    height: 100%;
+    height: 100vh;
     position: fixed;
     z-index: var(--overlay-layer);
     top: 0;
@@ -84,15 +69,11 @@ z-index: 10;
     transition: 0.5s;
 }
 
-.overlay::-webkit-scrollbar {
-  display: none;
-}
-
 .overlay-content {
+  margin-left: var(--mobile-margin);
   position: absolute;
   width: 100%;
   height: 100%;
-  text-align: center;
 }
 
 .overlay-header{
@@ -101,9 +82,9 @@ z-index: 10;
   font-family: baskerville-urw;
   font-style: italic;
   font-weight: 400;
-  top: 0%;
-  left: var(--mobile-margin);
+  top: 0;
   margin: 0;
+  transform:translate(0, -10%);
 }
 
 .closebtn{
@@ -126,39 +107,71 @@ z-index: 10;
 }
 
 #about-text{
-  top: 20%;
+  width: 92vw;
   position: absolute;
+  top: 20vh;
   font-family: neue-haas-grotesk-display;
   font-weight: 400;
-  font-size: 10vw;
+  font-size: 6vw;
+}
+
+.overlay a {
+color: black;}
+
+.overlay a:hover {
+color: red;
+font-style: italic;
 }
 
 
-#freccia{
-  position: absolute;
-  bottom: 0;
-  width: 15vw;
-  height: 15vw;
-  left: 50%;
-  transform:translate(-50%, 0%);
-  z-index: var(--overlay-layer);
-}
-
-#crediti{
+#credits {
 display: none;
-margin-bottom: 50vh;
-text-align: left;
+position: absolute;
+bottom: var(--mobile-margin);
 }
 
-
-#crediti-text{
-  top: 0%;
-  left: 10vh;
-  position: relative;
+.credits-paragraph {
   font-family: baskerville-urw;
   font-style: italic;
   font-weight: 200;
-  font-size: 5vh;
+  font-size: 4vw;
+  width: 92vw;
+  cursor: pointer;
+  line-height: 1;
+}
+
+.credits-paragraph a {
+  text-decoration: none;
+}
+
+#troppo-italiano {
+  position: absolute;
+  bottom: 30vh;
+  width: 20vw;
+  left: 40vw;
+  z-index: var(--overlay-layer);
+  cursor: pointer;
+
+  animation: troppo-italiana 1s infinite;
+  -webkit-animation: troppo-italiana 1s infinite;
+
+  -webkit-transition: -webkit-transform .1s;
+          transition:         transform .1s;
+}
+
+
+#troppo-italiano:hover, #troppo-italiano:focus {
+  animation-play-state: paused;
+
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+}
+
+
+@keyframes troppo-italiana {
+  0% {bottom: 30vh}
+  50% {bottom: 34vh}
+  100% {bottom: 30vh}
 }
 
 

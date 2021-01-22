@@ -1,16 +1,3 @@
-function preload(){
-  // put preload code here
-}
-
-function setup() {
-
-  // put setup code here
-}
-
-function draw() {
-  // put drawing code here
-}
-
 function openAbout() {
   document.getElementById("about").style.width = "100%";
 }
@@ -42,11 +29,6 @@ if(x.style.display === 'none'){
 else {x.style.display = 'none'}
 }
 
-// Daniel Shiffman
-// http://codingtra.in
-// http://patreon.com/codingtrain
-// Code for: https://youtu.be/urR596FsU68
-
 // module aliases
 var Engine = Matter.Engine,
   // Render = Matter.Render,
@@ -60,6 +42,7 @@ var boxes = [];
 var ground;
 
 function setup() {
+
   cnv = createCanvas(windowWidth, windowHeight);
   cnv.parent("poll");
   engine = Engine.create();
@@ -91,7 +74,7 @@ function preload(){
   penna = loadImage('./penna.png');
 }
 
-function draw() {
+function draw() {  
   background(255);
   Engine.update(engine);
   for (var i = 0; i < boxes.length; i++) {
