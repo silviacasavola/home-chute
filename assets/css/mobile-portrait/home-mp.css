@@ -188,8 +188,8 @@ transform:translate(-50%, 0);
   }
 
   @-skrollr-keyframes skip {
-  0 {margin-bottom: 4vh}
-  400 {margin-bottom: 20vh}
+  0 {margin-bottom: 6vh}
+  400 {margin-bottom: 4vh}
   4400  {opacity: 1}
   4600	{opacity: 0}
   }
