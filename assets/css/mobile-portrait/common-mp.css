@@ -85,7 +85,7 @@ position: absolute;
   font-weight: 400;
   top: 0;
   margin: 0;
-  transform:translate(0, -30%);
+  transform:translate(0, -28%);
 }
 
 .closebtn{
@@ -147,7 +147,7 @@ bottom: var(--mobile-margin);
 #troppo-italiano {
   position: absolute;
   bottom: 30vh;
-  height: 10vh;
+  height: 15vh;
   left: 40vw;
   z-index: var(--overlay-layer);
   cursor: pointer;
