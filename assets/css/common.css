@@ -67,8 +67,7 @@ cursor: pointer;
     z-index: var(--overlay-layer);
     top: 0;
     background-color: white;
-    overflow-x: hidden;
-    /* overflow-y: scroll; */
+    overflow: hidden;
     transition: 0.5s;
 }
 
