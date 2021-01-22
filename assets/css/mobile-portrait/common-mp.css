@@ -20,7 +20,7 @@ body::-webkit-scrollbar {
 }
 
 
-/* HEADER */
+
 #header{
   background-color: white;
   width: 100%;
@@ -60,7 +60,7 @@ display: inline-flex;
 
 /* OVERLAYS */
 .overlay {
-    max-height: 100vh;
+    height: 100vh;
     position: fixed;
     z-index: var(--overlay-layer);
     top: 0;
@@ -70,23 +70,23 @@ display: inline-flex;
 }
 
 .overlay-content {
-top: var(--margin);
-bottom: var(--margin);
-left: var(--margin);
-right: var(--margin);
+top: var(--mobile-margin);
+bottom: var(--mobile-margin);
+left: var(--mobile-margin);
+right: var(--mobile-margin);
 position: absolute;
-height: auto;
+border: solid;
 }
 
 .overlay-header{
   position: absolute;
-  font-size: 15vw;
+  font-size: 10vh;
   font-family: baskerville-urw;
   font-style: italic;
   font-weight: 400;
   top: 0;
   margin: 0;
-  transform:translate(0, -10%);
+  transform:translate(0, -30%);
 }
 
 .closebtn{
@@ -110,11 +110,10 @@ height: auto;
 
 #about-text{
   position: absolute;
-  top: 20vh;
-  width: 92vw;
+  top: 15vh;
   font-family: neue-haas-grotesk-display;
   font-weight: 400;
-  font-size: 6vw;
+  font-size: 3.5vh;
 }
 
 .overlay a {
@@ -149,16 +148,16 @@ bottom: var(--mobile-margin);
 #troppo-italiano {
   position: absolute;
   bottom: 30vh;
-  width: 20vw;
+  width: 17vw;
   left: 40vw;
   z-index: var(--overlay-layer);
   cursor: pointer;
 
-  animation: troppo-italiana 1s infinite;
-  -webkit-animation: troppo-italiana 1s infinite;
+  animation: troppo-italiana 2s infinite;
+  -webkit-animation: troppo-italiana 2s infinite;
 
-  -webkit-transition: -webkit-transform .1s;
-          transition:         transform .1s;
+  -webkit-transition: -webkit-transform .2s;
+          transition:         transform .2s;
 }
 
 
@@ -171,9 +170,9 @@ bottom: var(--mobile-margin);
 
 
 @keyframes troppo-italiana {
-  0% {bottom: 30vh}
-  50% {bottom: 34vh}
-  100% {bottom: 30vh}
+  0% {bottom: 25vh}
+  50% {bottom: 29vh}
+  100% {bottom: 25vh}
 }
 
 
