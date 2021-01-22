@@ -172,7 +172,7 @@ transform:translate(-50%, 0);
 /* SKIP INTRO */
 #skip-btn {
   position: fixed;
-  font-size: 3vh;
+  font-size: 2.5vh;
   bottom: 22vh;
   color: black;
   font-family: baskerville-urw;
