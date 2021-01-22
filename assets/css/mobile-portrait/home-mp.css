@@ -31,7 +31,7 @@ body {
 .paragraph {
   width: 100%;
   position: inherit;
-  top: 40vh;
+  top: 35vh;
   transform:translate(0%, -50%);
   font-size: 5vh;
   font-style: italic;
@@ -156,8 +156,8 @@ transform:translate(-50%, 0);
 }
 
 @-skrollr-keyframes scroll-suggestion {
-  0 {width: 30vw}
-  400 {width: 25vw}
+  0 {width: 25vw}
+  400 {width: 20vw}
 4400  {opacity: 1}
 4600	{opacity: 0}
 }
@@ -173,7 +173,7 @@ transform:translate(-50%, 0);
 #skip-btn {
   position: fixed;
   font-size: 3vh;
-  bottom: 0h;
+  bottom: 20vh;
   color: black;
   font-family: baskerville-urw;
   font-style: italic;
@@ -188,8 +188,6 @@ transform:translate(-50%, 0);
   }
 
   @-skrollr-keyframes skip {
-  0 {margin-bottom: 6vh}
-  400 {margin-bottom: 4vh}
   4400  {opacity: 1}
   4600	{opacity: 0}
   }
