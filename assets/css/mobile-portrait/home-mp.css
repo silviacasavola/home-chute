@@ -156,6 +156,8 @@ transform:translate(-50%, 0);
 }
 
 @-skrollr-keyframes scroll-suggestion {
+  0 {width: 30vw}
+  400 {width: 20vw}
 4400  {opacity: 1}
 4600	{opacity: 0}
 }
@@ -186,6 +188,8 @@ transform:translate(-50%, 0);
   }
 
   @-skrollr-keyframes skip {
+  0 {bottom: 4vh}
+  400 {bottom: 3vh}
   4400  {opacity: 1}
   4600	{opacity: 0}
   }
