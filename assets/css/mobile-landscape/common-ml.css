@@ -22,9 +22,10 @@ body::-webkit-scrollbar {
 
 /* HEADER */
 #header{
-margin-top: var(--top-margin);
+  background-color: white;
   width: 100%;
   position: fixed;
+  padding-top: var(--mobile-topmargin);
   z-index: var(--header-layer);
 }
 
@@ -53,28 +54,16 @@ display: inline-flex;
 #ranking-btn{right: var(--margin);}
 
 
-#title{
-  margin: auto;
-  font-family: neue-haas-grotesk-display;
-  font-style: normal;
-  font-weight: 600;
-  text-align: center;
-  color: black;
-  margin-top: 0vh;
-  font-size: 10vh;
-}
-
-
 
 
 /* OVERLAYS */
 .overlay {
-    height: 100%;
+    height: 100vh;
     position: fixed;
     z-index: var(--overlay-layer);
     top: 0;
     background-color: white;
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.5s;
 }
 
