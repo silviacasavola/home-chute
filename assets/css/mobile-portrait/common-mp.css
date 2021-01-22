@@ -1,7 +1,7 @@
 :root {
   --mobile-margin: 4vw;
   --mobile-topmargin: 2vw;
-  --mobile-bottommargin: 8vh;
+  --mobile-bottom-margin: 8vh;
 
   --header-layer: 100;
   --overlay-layer: 200;
