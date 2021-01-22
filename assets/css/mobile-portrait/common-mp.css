@@ -75,7 +75,6 @@ bottom: var(--mobile-margin);
 left: var(--mobile-margin);
 right: var(--mobile-margin);
 position: absolute;
-border: solid;
 }
 
 .overlay-header{
@@ -119,7 +118,7 @@ border: solid;
 .overlay a {
 color: black;}
 
-.overlay a:hover {
+.overlay a:focus {
 color: red;
 font-style: italic;
 }
@@ -148,7 +147,7 @@ bottom: var(--mobile-margin);
 #troppo-italiano {
   position: absolute;
   bottom: 30vh;
-  width: 17vw;
+  height: 10vh;
   left: 40vw;
   z-index: var(--overlay-layer);
   cursor: pointer;
