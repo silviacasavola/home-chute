@@ -189,7 +189,7 @@ transform:translate(-50%, 0);
 
   @-skrollr-keyframes skip {
   0 {bottom: 4vh}
-  400 {bottom: 3vh}
+  400 {bottom: 20vh}
   4400  {opacity: 1}
   4600	{opacity: 0}
   }
