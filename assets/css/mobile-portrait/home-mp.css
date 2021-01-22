@@ -157,7 +157,7 @@ transform:translate(-50%, 0);
 
 @-skrollr-keyframes scroll-suggestion {
   0 {width: 30vw}
-  400 {width: 20vw}
+  400 {width: 25vw}
 4400  {opacity: 1}
 4600	{opacity: 0}
 }
@@ -173,7 +173,7 @@ transform:translate(-50%, 0);
 #skip-btn {
   position: fixed;
   font-size: 3vh;
-  bottom: 20vh;
+  bottom: 0h;
   color: black;
   font-family: baskerville-urw;
   font-style: italic;
@@ -184,12 +184,12 @@ transform:translate(-50%, 0);
 
   z-index: 120;
 
-  -skrollr-animation-name:skip;
+  -skrollr-animation-name: skip;
   }
 
   @-skrollr-keyframes skip {
-  0 {bottom: 4vh}
-  400 {bottom: 20vh}
+  0 {margin-bottom: 4vh}
+  400 {margin-bottom: 20vh}
   4400  {opacity: 1}
   4600	{opacity: 0}
   }
