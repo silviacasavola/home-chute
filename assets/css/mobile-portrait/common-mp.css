@@ -60,12 +60,12 @@ display: inline-flex;
 
 /* OVERLAYS */
 .overlay {
-    height: 100vh;
+    max-height: 100vh;
     position: fixed;
     z-index: var(--overlay-layer);
     top: 0;
     background-color: white;
-    overflow-x: hidden;
+    overflow: hidden;
     transition: 0.5s;
 }
 
