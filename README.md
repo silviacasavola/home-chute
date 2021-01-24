@@ -10,11 +10,10 @@ During the exam, no slides are needed. Stress these three points in particular: 
 "Pasta Chute" is a WebApp built on [p5.js](https://p5js.org) that aims to connect people thanks to a topic of general interest: pasta.
 The app is playable at: https://surprise-surprise.herokuapp.com/<br>
 "Past Chute" was developed as a part of the [Creative Coding](https://drawwithcode.github.io/) course at Politecnico di Milano.<br>
-<br>
-Faculty: Michele Mauri, Andrea Benedetti, Tommaso Elli
+<br>Faculty: Michele Mauri, Andrea Benedetti, Tommaso Elli
 
 ## Table of Contents
-1. [Project Idea](#project-idea)<br>
+1. [Concept](#concept)<br>
 a. [How does it work?](#how-does-it-work)<br>
 b. [The User Challenge](#the-user-challenge)<br>
 2. [Structure](#structure)<br>
@@ -27,20 +26,16 @@ d. [Ranking](#ranking)<br>
 a. [Tools](#tools)<br>
 5. [Team](#team)<br>
 
-## Project Idea  
+## Concept  
+As harmless as it might look, pasta often ends up at the center of fierce animated debates, especially in our country. Our team wanted to trigger the same engagement in a WebApp the requires users to root for their favorite type of pasta.
 The purpose is light and humorous: to entertain people through a very simple, yet engaging experience and to make them feel part of something big, despite (or maybe thanks to) the trivial subject.
 The creative process is very similar to the one of memes, as it starts from picking a very simple piece of culture that has a surprisingly big impact because of its universality.
 
-The instructions for the group project of the Creative Coding course were to create an online space in which users could interact with each other.  
-Our group decided to ponder about the concept of virtual space so we decided to create a space that was not only virtual but also physical; in this way the user could walk around using the geolocalization.  
-We searched to see if there were already some applications similar to the one we had in mind (for example YakYak) to understand which were the critical points on the dynamics in a space where users can interact, to try and fix them.  
-We found a recurring problem in online space: the total freedom of the user to say everything they want, which may contribute to transforming the online space in an hostile environment (cyber-bulling, etc).  
-As a result we decided to create a space in which people could develop a higher sensibility through the expression of their emotions. The app is also Christmas themed because its purpose is very similar to the attitude people feel thanks to the Christmas atmosphere of kindness and gratefulness.
 
 ## Context of use
-Casual ongoing game, with no special events.<br>
-Friends can arrange to visit the website at the same time to play together or against each other, but one can also play alone, fooling around, asking themselves what pasta they prefer, discovering new types and browsing the records.<br>
-Devices: desktop and mobile.
+The project addresses a broad target audience, but it's expected to be spark interest / be appreciated / succeed mostly among young people. The game is always ongoing and there is no special events, so that people can jump in and fool around whenever they want.<br>
+Friends can arrange to visit the website at the same time to play together or against each other, but one can also play alone, fooling around, asking themselves what pasta they prefer, discovering new types and browsing the records.
+
 
 ## How does it work?
 The user can through the map in any directions, but he will have some restrictions: he won’t be able to zoom back over a certain value, to discourage the user from exploring the places on the man that are not strictly surrounding. The user can move on the map as he moves around in real life; through a button located in the bottom part of the scree he can leave some packets around, which could be opened from other users that find them while exploring the map. The user will be able to leave a content of his choice hidden inside the gifts.
@@ -180,8 +175,8 @@ In general we used mostly p5.js to handle events but for graphics and animations
 * [three.js](https://threejs.org/)
 
 ## Team
-* Martina Bracchi   
-* Silvia Casavola
-* Dario Faudella  
-* Manuel Reale
-* Donato Renzulli
+* [Martina Bracchi](mailto:martinabracchi.mb@gmail.com)   
+* [Silvia Casavola](mailto:silcasavola@gmail.com)
+* [Dario Faudella](mailto:dario.faudella@gmail.com)  
+* [Manuel Reale](mailto:manuel.reale2000@gmail.com)
+* [Donato Renzulli](mailto:donren.99@gmail.com)
