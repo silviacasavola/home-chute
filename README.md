@@ -2,7 +2,7 @@
 - Design challenges. Which were the most challenging aspects of your project, design-wise? How did you solve your design problems? Document this part with images, schemas, diagrams and screenshots from the prototype.
 - Coding challenges. Which were the most challenging aspects of your project, coding-wise? How did you solve your coding problems? Document this part with code snippets, links to tutorials you followed or resources you found online.
 
-![heading](./links/heading.png)
+![alt tag](links/heading.png)
 
 ## About
 "Pasta Chute" is a virtual common space built on [p5.js](https://p5js.org) that aims to connect people thanks to a topic of general interest: pasta.
@@ -36,7 +36,7 @@ The creative process is very similar to the one of memes, as it starts from pick
 
 
 #### Context of use
-The project is addressed to a broad target audience, but it's expected to spark interest mostly among young people.<br>
+The project is addressed to a broad target audience, but it's expected to spark interest and hopefully mostly among young people.<br>
 The game is always ongoing and there are no special events, so that people can jump in, fool around and browse the app whenever they want. This is why it was very important for us to make the game suitable for both computers and mobile devices.<br>
 Friends can arrange to visit the website at the same time to play together or against each other, but one can also play alone, fooling around, asking themselves what pasta they prefer, discovering new types and formats, learning new informations about pasta, and browsing the game records.
 
@@ -47,7 +47,7 @@ The homepage is designed to welcome the user and to prepare them to the fast dyn
 Once they are ready to enter the game, the user clicks on a button and a pop-up appears that counts down the time remaining to the end of the current match (max. 15 seconds).<br>
 The purpose of this section is to entertain the user until the start of a new match, so that they don't find themselves in the middle of a duel that has already started. It contains a mini-game: pieces of pasta falling from above and a colander that can be moved to catch as many pieces as possible.
 
-![home](./links/home.gif)
+![homepage](links/homepage.gif)
 
 #### Waiting room
 The waiting room is a 5-second-long transitional phase between a match and another.<br>
@@ -62,8 +62,6 @@ Each match last 15 seconds. The short duration makes the single contest very qui
 #### About
 The section "About" is a hidden overlay that slides over the screen from the left, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
 It contains information about the project and the elective course. A click on the symbol of the typical Italian hand gesture "mano a borsa" displays the names of the team members and of the professors.
-
-![about](./links/home.gif)
 
 #### Ranking
 The section "Ranking" is a hidden overlay that slides over the screen from the right, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
@@ -82,13 +80,21 @@ The app was built mostly in [p5.js](https://p5js.org/). The library [matter.js](
 * [skrollr.js](https://github.com/Prinzhorn/skrollr)
 * [three.js](https://threejs.org/)
 
+#### Design challenges
+One of the design challenges was creating a web app that was true to our vision of a simple, brutalist website with a cool graphic setup and a conscious an punctual use of colour.<br>
+The core idea was to create a cool engaging web experience regardless of the simplicity of the chosen topic.<br>
+From the get-go we had a clear idea of how the app should look like from the typographical point of view: the juxtaposition of a bold grotesk font and an italic serif. The idea was to pair the textual elements with illustrations of the various formats of pasta, in a "wireframe" style.<br>
+One of the challenges that came up during the illustration process was making sure they looked in line with the rest of the website, not being too organically realistic - which would clash with the overall look - or geometrically rigid - which would make the pieces look stiff when falling and piling up.<br>
+* *inserire foto dei diversi tipi di illustrazioni di pasta*
+<br>
+From the perspective of HTML and CSS design it wasn't easy to fit all of the information in as few HTML documents as possible.<br>
+It also wasn't easy to make the website responsive for viewing and interacting on mobile, considering the different interaction methods between the two types of devices and the change in proportions and screen ratios.
+
+(...)
+- non lo so
+
 #### Coding challenges
 (...)
-
-#### Design challenges
-(...)
-- responsive
-- non lo so
 
 (Questa parte viene da un altro read-me, vediamo come inserire parti di codice)
 
