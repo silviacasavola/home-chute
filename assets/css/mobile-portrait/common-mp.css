@@ -199,10 +199,12 @@ bottom: var(--mobile-bottom-margin);
 
 /* MARQUEE */
 .marquee {
+  width: 100%;
+  left: 0;
   bottom: 0;
   position: fixed;
   background-color: red;
-  height: 2em;
+  height: 3em;
 }
 
 #text-marquee {
@@ -210,5 +212,5 @@ bottom: var(--mobile-bottom-margin);
   font-size: 3vw;
   color: white;
   line-height: 1;
-  transform:translate(0, -50%);
+  transform:translate(0, -75%);
 }

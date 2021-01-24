@@ -30,7 +30,7 @@ body {
 
 .paragraph {
   width: 100%;
-  position: inherit;
+  position: fixed;
   top: 38vh;
   transform:translate(0%, -50%);
   font-size: 5vh;
@@ -143,7 +143,7 @@ line-height:2.5;
 #scroll {
   position: fixed;
   padding-bottom: var(--mobile-margin);
-  bottom: 0;
+  bottom: 2vh;
   left: 50%;
   width: 30vw;
   height: auto;
@@ -163,9 +163,9 @@ transform:translate(-50%, 0);
 }
 
 @-webkit-keyframes bounce {
-  0%       { bottom:0vh; }
-  50%      { bottom:8vh; }
-  100%     {bottom:0vh;}
+  0%       { bottom: 2vh; }
+  50%      { bottom: 8vh; }
+  100%     {bottom: 2vh;}
 }
 
 
