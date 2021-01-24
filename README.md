@@ -1,7 +1,3 @@
-- Concept of your project. Where does your idea come from? What is you communication aim? What is the context of use of your project? What devices are part of the experience?
-- Design challenges. Which were the most challenging aspects of your project, design-wise? How did you solve your design problems? Document this part with images, schemas, diagrams and screenshots from the prototype.
-- Coding challenges. Which were the most challenging aspects of your project, coding-wise? How did you solve your coding problems? Document this part with code snippets, links to tutorials you followed or resources you found online.
-
 ![alt tag](links/heading.png)
 
 ## About
@@ -23,8 +19,8 @@ e. [Ranking](#ranking)<br>
 f. [Thank you page](#thank-you-page)<br>
 3. [The Code](#the-code)<br>
 a. [Tools](#tools)<br>
-b. [Coding challenges](#coding-challenges)<br>
-c. [Design challenges](#design-challenges)<br>
+b. [Design challenges](#design-challenges)<br>
+c. [Coding challenges](#coding-challenges)<br>
 4. [Team](#team)<br>
 
 ## Project idea
