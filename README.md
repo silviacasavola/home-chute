@@ -57,7 +57,7 @@ The tablecloth is a 3D object built in [three.js](https://threejs.org/), which w
 The poll works in a very simple way. The screen is split in two; each side represents a type of pasta. The user needs to locate their mouse (or their finger) on the side of the pasta they want to vote for and click as many times as possible to make it win. Any click generates a piece of the chosen pasta in that point of the screen, which falls on the ground and gathers on the others, thanks to the mechanics of [matter.js](https://brm.io/matter-js/). This way, it's very easy to sense what pasta is winning and the contribution of the other users, who generate pasta in turn.<br>
 All the matches last 15 seconds. The short duration makes the individual contests very quick and ephemeral, but each result contributes to the general ranking.
 
-#### Ranking
+#### About
 The section "About" is an hidden overlay that slides to the right, when opened through the corresponding button in the header.<br>
 It contains information about the project and the course. A click on the picture of the typical Italian handgesture "mano a borsa" displays the names of the team members and the professors'.
 
