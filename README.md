@@ -8,7 +8,7 @@
 "Pasta Chute" is a virtual common space built on [p5.js](https://p5js.org) that aims to connect people thanks to a topic of general interest: pasta.
 The app is playable at: https://link<br>
 "Past Chute" was developed as a part of the [Creative Coding](https://drawwithcode.github.io/) course at Politecnico di Milano.<br>
-<br>Faculty: Michele Mauri, Andrea Benedetti, Tommaso Elli
+<br>Faculty: Michele Mauri, Tommaso Elli, Andrea Benedetti
 
 ## Table of Contents
 1. [Project idea](#Project-idea)<br>
@@ -30,48 +30,48 @@ c. [Design challenges](#design-challenges)<br>
 ## Project idea
 #### Concept
 As harmless as it might look, pasta often ends up at the center of animated debates, especially in our country.<br>
-Our team wanted to trigger the same fierceness/partecipation/sensitivity, by asking users to root for their favorite type of pasta.<br>
-The purpose is light and humorous: to entertain people through a very simple, yet engaging experience and to make them feel part of something big, despite (or maybe thanks to) the trivial subject.
+Our team wanted to trigger the same heartfelt involvement in this kind of debate, by asking users to root for their favorite type of pasta.<br>
+The purpose is light and humorous: to entertain people through a very simple, yet engaging experience and to make them feel part of something big, despite (or maybe even thanks to) the trivial subject.
 The creative process is very similar to the one of memes, as it starts from picking a very simple piece of culture that has a surprisingly big impact because of its universality.
 
 
 #### Context of use
-The project addresses a broad target audience, but it's expected to spark interest / be appreciated / succeed mostly among young people.<br>
-The game is always ongoing and there are no special events, so that people can jump in and fool around whenever they want. This is why it was very important to us to make the game suitable for both computers and mobile devices.<br>
-Friends can arrange to visit the website at the same time to play together or against each other, but one can also play alone, fooling around, asking themselves what pasta they prefer, discovering new types and browsing the records.
+The project is addressed to a broad target audience, but it's expected to spark interest and hopefully mostly among young people.<br>
+The game is always ongoing and there are no special events, so that people can jump in, fool around and browse the app whenever they want. This is why it was very important for us to make the game suitable for both computers and mobile devices.<br>
+Friends can arrange to visit the website at the same time to play together or against each other, but one can also play alone, fooling around, asking themselves what pasta they prefer, discovering new types and formats, learning new informations about pasta, and browsing the game records.
 
 
 ## Structure
 #### Homepage
-The homepage is designed to prepare the user to the fast dynamics of the poll. The library [skrollr](https://github.com/Prinzhorn/skrollr) was used to display a sequence of very concise information about the attitude they need to take: be fierce, be fast and ready to click.<br>
-Once they are ready to enter the game, the user clicks on a button and a pop-up appears that counts the time remaining until the end of the current match (max. 15 seconds).<br>
-The purpose of this section is to entertain the user until the start of a new match, so that they don't find themselves in the middle of a duel that has already started. It contains a mini-game: pieces of pasta fall from above and a colander can be moved to catch as many as possible.
+The homepage is designed to welcome the user and to prepare them to the fast dynamics of the poll. The library [skrollr](https://github.com/Prinzhorn/skrollr) was used to display a sequence of very concise information about the attitude they need to take on: be fierce, be fast and ready to click.<br>
+Once they are ready to enter the game, the user clicks on a button and a pop-up appears that counts down the time remaining to the end of the current match (max. 15 seconds).<br>
+The purpose of this section is to entertain the user until the start of a new match, so that they don't find themselves in the middle of a duel that has already started. It contains a mini-game: pieces of pasta falling from above and a colander that can be moved to catch as many pieces as possible.
 
 ![homepage](links/homepage.gif)
 
 #### Waiting room
-The waiting room is a 5-seconds-long transitional phase between a match and another.<br>
-A red checkered, truly Italian-stereotype-style tablecloth flutters in the screen and falls at the end of the timer, uncovering the actual poll. While in this phase, online users can see each other cursors, in the form of forks.<br>
-If one is tired to play, there is a button that leads to the Thank you page.<br>
+The waiting room is a 5-second-long transitional phase between a match and another.<br>
+A truly Italian-stereotype-style red checkered tablecloth flutters on the screen and falls at the end of the timer, uncovering the actual poll. During this phase, online users can see each other's cursors, in the form of forks, and therefore understand how many players are online with them at that moment.<br>
+If one is tired to play, there is a button that leads to the [thank you page](#thank-you-page).<br>
 The tablecloth is a 3D object built in [three.js](https://threejs.org/), which was taken from [Memetic Warfare Archive](https://densitydesign.github.io/teaching-dd15/course-results/es03/group03/).
 
 #### Poll
-The poll works in a very simple way. The screen is split in two; each side represents a type of pasta. The user needs to locate their mouse (or their finger) on the side of the pasta they want to vote for and click as many times as possible to make it win. Any click generates a piece of the chosen pasta in that point of the screen, which falls on the ground and gathers on the others, thanks to the mechanics of [matter.js](https://brm.io/matter-js/). This way, it's very easy to sense what pasta is winning and the contribution of the other users, who generate pasta in turn.<br>
-All the matches last 15 seconds. The short duration makes the individual contests very quick and ephemeral, but each result contributes to the general ranking.
+The poll works in a very simple way. The screen is split in two halves; each side houses each round a different type of pasta. The user needs to place their mouse (or their finger) on the side they want to vote for, and click (or tap) as many times as possible to make it win. Each click generates a piece of the chosen pasta in that position of the screen, this then falls on the ground and piling up on the others, thanks to the mechanics of [matter.js](https://brm.io/matter-js/). This visual representation makes it very easy to understand what pasta is winning and the contribution of the other users, who are generating pasta on the other side of the screen.<br>
+Each match last 15 seconds. The short duration makes the single contest very quick and ephemeral, but all results contribute to the overall ranking.
 
 #### About
-The section "About" is an hidden overlay that slides to the right, when opened through the corresponding button in the header.<br>
-It contains information about the project and the course. A click on the picture of the typical Italian handgesture "mano a borsa" displays the names of the team members and the professors'.
+The section "About" is a hidden overlay that slides over the screen from the left, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
+It contains information about the project and the elective course. A click on the symbol of the typical Italian hand gesture "mano a borsa" displays the names of the team members and of the professors.
 
 #### Ranking
-The section "Ranking" is an hidden overlay that slides to the left, when opened through the corresponding button in the header.<br>
-It contains the global results of the game. It ranks all the types of pasta by the total clicks received.
+The section "Ranking" is a hidden overlay that slides over the screen from the right, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
+It contains the global results of the game. It ranks all the types of pasta by the total amount of clicks received.
 
 #### Thank you page
-This page is accessed through the waiting room, when the user is tired of playing and wants to leave the website. It contains a piece of trivia about pasta, which is randomly selected from an array.
+This page is reachable through the waiting room, the user can visit it when they are tired of playing and want to leave the website. It contains each time a different piece of trivia about pasta, which is randomly selected from an array.
 
 ## The Code
-The app was built mostly in p5.js. The library matter.js was used to render the mechanics of the pieces of pasta falling from above.
+The app was built mostly in [p5.js](https://p5js.org/). The library [matter.js](https://brm.io/matter-js/) was used to render the mechanics of the pieces of pasta falling from above.
 
 #### Tools
 * [p5.js](https://p5js.org/)
@@ -90,8 +90,8 @@ The app was built mostly in p5.js. The library matter.js was used to render the 
 
 (Questa parte viene da un altro read-me, vediamo come inserire parti di codice)
 
-We used Mapbox for the main part of the WebApp. To intergrate Mapbox GL inside p5.js we used a library called mappa.js, a tool that facilitate work between the canvas element and existing map libraries and APIs.
-We slightly changed mappa.js to add a gps button that helps the user go back to his position:
+We used Mapbox for the main part of the WebApp. To intergrate Mapbox GL inside p5.js we used a library called [mappa.js](https://mappa.js.org), a tool that facilitates work between the canvas elements and the existing map libraries and APIs.
+We slightly changed mappa.js to add a gps button that helps the user to go back to his position:
 ```javascript
 map.addControl(
   new mapboxgl.GeolocateControl({
@@ -103,11 +103,11 @@ map.addControl(
 	})
 );
 ```
-The main challenge was based around having so many interactions that have to be registered, remembered and sent to everyone.
-We overcame that challenge by relying on a local JSON file that is modified everytime a change with the present happens by sending signals from the client to the server and then to all the clients with socket.io, an engine which enables real-time, bidirectional and event-based communication.
-As an example, when someone sends a present automatically will be sent a JSON variable to the server holding all the present informations:
+The main challenge was based around having such a large number of interactions that need to be registered, remembered and broadcasted to everyone.
+We overcame this challenge by relying on a local JSON file that is updated each time a change to the present version happens, by sending signals from the client to the server and then back to all the other clients with [mappa.js](https://socket.io), an engine that enables real-time, bidirectional and event-based communication.
+As an example, when someone sends a present, a JSON variable will be automatically sent to the server holding all the present information:
 ```javascript
-//Variable holding the new Present informations
+//Variable holding the new present information
 var data = {
   x: rx,
   y: ry,
@@ -115,7 +115,7 @@ var data = {
   show: iconshow
 }
 
-//JSON variable holding the previus variable
+//JSON variable holding the previous variable
 var json = {
   method: 'POST',
   headers: {
@@ -127,30 +127,30 @@ var json = {
 //Emit the Present data to other Users
 socket.emit('present', json);
 ```
-When the server receives the signal and the gift Informations it starts a function to change the local JSON by adding this new informations:
+When the server receives the signal and the gift information it starts a function to change the local JSON by adding this new information:
 ```javascript
 function jsonUpdate(request){
-  var testo = request.body; //Put the informations of the present that a user sent on the variable testo
+  var testo = request.body; //assign the information of the present that a user sent to the variable testo
   var fs = require('fs'); //Call FileSystem API to read and modify JSON file
 
 	//Read JSON file
 	fs.readFile('./public/presents.json', 'utf8', function readFileCallback(err, data) {
     if (err) {
-      console.log(err); //If the read produces an error say it on the console
+      console.log(err); //If the read produces an error, log it on the console
     } else {
       obj = JSON.parse(data); //Convert the JSON into an object
-      obj.regali.push(testo) //Put the present informations as a new entry inside the objects
+      obj.regali.push(testo) //Put the present information as a new entry inside the objects
       json = JSON.stringify(obj, null, 2); //Convert the object into a string
       fs.writeFile('./public/presents.json', json, finished); //Write new entry into JSON
-		  socket.broadcast.emit('presentBroadcast', request); //Send to all clients the update
+		  socket.broadcast.emit('presentBroadcast', request); //Send the update to all clients
     }
   });
 }
 ```
 And then a signal is emitted to all the clients to update the presents:
 ```javascript
-regalimported = []; //deletes all the previus shown presents
-database = loadJSON("../presents.json"); //Loads JSON with new informations
+regalimported = []; //deletes all the previous shown presents
+database = loadJSON("../presents.json"); //Loads JSON with new information
 //Recreate all the gifts Objects on the map after some time to ensure that the JSON is loaded
 setTimeout(function() {
   for (var t = 0; t < database.regali.length; t++) {
@@ -165,7 +165,7 @@ setTimeout(function() {
   }
 }, 1000);
 ```
-In general we used mostly p5.js to handle events but for graphics and animations we used JQuery and CSS as it's easier to make the animations more fluid and dynamic.
+In general we used mostly p5.js to handle events but for graphics and animations we used JQuery and CSS as it's easier to use these to make more fluid and dynamic animations.
 
 
 ## Team
