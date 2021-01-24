@@ -208,8 +208,8 @@ transform:translate(-50%, 0);
   transform-origin: center;
   border: solid 2px black;
   padding: 1% 2%;
-  cursor: pointer;
   outline: none;
+  cursor: pointer;
   -skrollr-animation-name: display-play;
 }
 

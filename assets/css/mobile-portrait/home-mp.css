@@ -197,16 +197,22 @@ transform:translate(-50%, 0);
   #play-btn {
     position: fixed;
     font-size: 5vw;
-    border-style: groove;
-    border-size: 10px;
-    padding: 1vw;
-    bottom: 10vh;
-    text-decoration: none;
-    left: 50%;
     color: black;
-    font-family: neue-haas-grotesk-display;
+    background-color: white;
+    border-radius: 10px;
+    bottom: 10vh;
+    left: 50%;
     transform:translate(-50%, 0);
-    transform-origin: center;-skrollr-animation-name: play-btn;
+    transform-origin: center;
+    border: solid 2px black;
+    padding: 1% 2%;
+    outline: none;
+    -skrollr-animation-name: play-btn;
+    }
+
+    #play-btn:focus {
+    font-style: italic;
+    color: red;
     }
 
     @-skrollr-keyframes play-btn {
