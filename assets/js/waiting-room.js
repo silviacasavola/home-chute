@@ -115,9 +115,13 @@
   colanderX = constrain(mouseX, colanderW/2, windowWidth-colanderW/2);
   colanderY = height - colanderH - windowHeight/12;
 
-    if (this.y > colanderY && this.x >= (colanderX - colanderW/2) && this.x <= (colanderX + colanderW)) {
+    if (this.y > colanderY && this.x >= (colanderX - colanderW/2) && this.x <= (colanderX + colanderW))
+    {
       this.y = 0;
+
+      if (ready == true) {
       score++;
+    }
   }
   }
   }
@@ -126,6 +130,9 @@
   // OPEN POLL
   function openPoll () {
   loop()
+
+// if a match is in progress, it display the mini-game
+
   if (timer >= 3) {
   select("#play-btn").hide();
   select("#skip-btn").hide();
@@ -137,5 +144,8 @@
   select("#waiting-room-text").addClass("activated")
   select("#score").addClass("activated")
   }
+
+  // if the match is over, it opens the poll
+
   else {window.open("poll.html", "_self")}
   }
