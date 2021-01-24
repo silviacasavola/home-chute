@@ -2,7 +2,7 @@
 - Design challenges. Which were the most challenging aspects of your project, design-wise? How did you solve your design problems? Document this part with images, schemas, diagrams and screenshots from the prototype.
 - Coding challenges. Which were the most challenging aspects of your project, coding-wise? How did you solve your coding problems? Document this part with code snippets, links to tutorials you followed or resources you found online.
 
-![alt tag](./links/heading.png)
+![heading](./links/heading.png)
 
 ## About
 "Pasta Chute" is a virtual common space built on [p5.js](https://p5js.org) that aims to connect people thanks to a topic of general interest: pasta.
@@ -47,7 +47,7 @@ The homepage is designed to welcome the user and to prepare them to the fast dyn
 Once they are ready to enter the game, the user clicks on a button and a pop-up appears that counts down the time remaining to the end of the current match (max. 15 seconds).<br>
 The purpose of this section is to entertain the user until the start of a new match, so that they don't find themselves in the middle of a duel that has already started. It contains a mini-game: pieces of pasta falling from above and a colander that can be moved to catch as many pieces as possible.
 
-![homepage](links/home.gif)
+![home](../links/home.gif)
 
 #### Waiting room
 The waiting room is a 5-second-long transitional phase between a match and another.<br>
@@ -63,7 +63,7 @@ Each match last 15 seconds. The short duration makes the single contest very qui
 The section "About" is a hidden overlay that slides over the screen from the left, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
 It contains information about the project and the elective course. A click on the symbol of the typical Italian hand gesture "mano a borsa" displays the names of the team members and of the professors.
 
-![about](links/about.gif)
+![about](../links/about.gif)
 
 #### Ranking
 The section "Ranking" is a hidden overlay that slides over the screen from the right, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
