@@ -34,7 +34,8 @@ The creative process is very similar to the one of memes, as it starts from pick
 
 
 #### Context of use
-The project addresses a broad target audience, but it's expected to be spark interest / be appreciated / succeed mostly among young people. The game is always ongoing and there are no special events, so that people can jump in and fool around whenever they want. This is why it was very important to us to make the game suitable for both computers and mobile devices.<br>
+The project addresses a broad target audience, but it's expected to spark interest / be appreciated / succeed mostly among young people.
+The game is always ongoing and there are no special events, so that people can jump in and fool around whenever they want. This is why it was very important to us to make the game suitable for both computers and mobile devices.<br>
 Friends can arrange to visit the website at the same time to play together or against each other, but one can also play alone, fooling around, asking themselves what pasta they prefer, discovering new types and browsing the records.
 
 
