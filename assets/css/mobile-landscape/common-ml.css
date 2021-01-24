@@ -166,7 +166,7 @@ text-align: left;
 
 #text-marquee {
   font-family: sans-serif;
-  font-size: 1vw;
+  font-size: 2vw;
   color: white;
   line-height: 1;
   transform:translate(0, -50%);
