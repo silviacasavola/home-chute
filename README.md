@@ -13,26 +13,29 @@ The app is playable at: https://surprise-surprise.herokuapp.com/<br>
 <br>Faculty: Michele Mauri, Andrea Benedetti, Tommaso Elli
 
 ## Table of Contents
-1. [Concept](#concept)<br>
-a. [How does it work?](#how-does-it-work)<br>
-b. [The User Challenge](#the-user-challenge)<br>
+1. [Project idea](#Project-idea)<br>
+a. [Concept](#concept)<br>
+b. [Context of use](#context-of-use)<br>
 2. [Structure](#structure)<br>
 a. [Homepage](#homepage)<br>
 b. [Waiting room](#waiting-room)<br>
 c. [Poll](#poll)<br>
 d. [Ranking](#ranking)<br>
-3. [The Interface](#the-interface)<br>
-4. [The Code](#the-code)<br>
+e. [Exit page](#exit-page)<br>
+3. [The Code](#the-code)<br>
 a. [Tools](#tools)<br>
-5. [Team](#team)<br>
+b. [Coding challenges](#coding-challenges)<br>
+c. [Design challenges](#design-challenges)<br>
+4. [Team](#team)<br>
 
-## Concept  
+## Project idea
+#### Concept
 As harmless as it might look, pasta often ends up at the center of animated debates, especially in our country. Our team wanted to trigger the same fierceness/partecipation/sensitivity, by asking users to root for their favorite type of pasta.<br>
 The purpose is light and humorous: to entertain people through a very simple, yet engaging experience and to make them feel part of something big, despite (or maybe thanks to) the trivial subject.
 The creative process is very similar to the one of memes, as it starts from picking a very simple piece of culture that has a surprisingly big impact because of its universality.
 
 
-## Context of use
+#### Context of use
 The project addresses a broad target audience, but it's expected to be spark interest / be appreciated / succeed mostly among young people. The game is always ongoing and there are no special events, so that people can jump in and fool around whenever they want. This is why it was very important to us to make the game suitable for both computers and mobile devices.<br>
 Friends can arrange to visit the website at the same time to play together or against each other, but one can also play alone, fooling around, asking themselves what pasta they prefer, discovering new types and browsing the records.
 
@@ -44,7 +47,8 @@ Once they are ready to enter the game, the user clicks on a button and a pop-up 
 
 #### Waiting room
 The waiting room is a 5-seconds-long transitional phase between a match and another.<br>
-A red checkered, truly Italian-stereotype-style tablecloth flutters in the screen and falls at the end of the timer, uncovering the actual poll. While in this phase, online users can see each other cursors, in the form of forks.
+A red checkered, truly Italian-stereotype-style tablecloth flutters in the screen and falls at the end of the timer, uncovering the actual poll. While in this phase, online users can see each other cursors, in the form of forks.<br>
+If one is tired to play, there is a button that leads to the exit page.
 
 #### Poll
 The poll works in a very simple way. The screen is split in two; each side represents a type of pasta. The user needs to locate their mouse (or their finger) on the side of the pasta they want to vote for and click as many times as possible to make it win. Any click generates a piece of the chosen pasta in that point of the screen, which falls on the ground and gathers on the others, thanks to the mechanics of [matter.js](https://brm.io/matter-js/). This way, it's very easy to sense what pasta is winning and the contribution of the other users, who generate pasta in turn.
@@ -53,30 +57,26 @@ All the matches last 15 seconds. The short duration makes the individual contest
 #### Ranking
 The ranking displays the general results of the whole game.
 
-## The Interface  
-The WebApp works only on mobile platforms and in portrait mode.
-<p align="center">
-  <img width="400" height="200" src="../master/links/desktop.png">
-</p>
-
-In the map in  the user has a limited possibility to move around. He can move the map, but he can't zoom back over a certain value.
-
-  ![alt tag](../master/links/map.jpg)
-
-The user, clicking the button in the bottom part of the screen, will be able to leave some presents around. The user can choose three differents mood.
-
-  ![alt tag](../master/links/mood)
-
-The user who leaves the package will see it in greyscale, while the other users will see it in a coloured version.
-
-  ![alt tag](../master/links/packages.jpg)
-
-When the other users open your packages, they will see some animations that show your chosen mood.
-
-  ![alt tag](../master/links/open.jpg)
+#### Goodbye
+Exit page.
 
 ## The Code
 The app was built mostly in p5.js. The library matter.js was used to render the mechanics of the pieces of pasta falling from above.
+
+#### Tools
+* [p5.js](https://p5js.org/)
+* [matter.js](https://brm.io/matter-js/)
+* [JQuery](https://jquery.com/)
+* [skrollr.js](https://github.com/Prinzhorn/skrollr)
+* [three.js](https://threejs.org/)
+
+#### Coding challenges
+(...)
+
+#### Design challenges
+(...)
+
+(Questa parte viene da un altro read-me, vediamo come inserire parti di codice)
 
 We used Mapbox for the main part of the WebApp. To intergrate Mapbox GL inside p5.js we used a library called mappa.js, a tool that facilitate work between the canvas element and existing map libraries and APIs.
 We slightly changed mappa.js to add a gps button that helps the user go back to his position:
@@ -155,15 +155,9 @@ setTimeout(function() {
 ```
 In general we used mostly p5.js to handle events but for graphics and animations we used JQuery and CSS as it's easier to make the animations more fluid and dynamic.
 
-## Tools
-* [p5.js](https://p5js.org/)
-* [matter.js](https://brm.io/matter-js/)
-* [JQuery](https://jquery.com/)
-* [skrollr.js](https://github.com/Prinzhorn/skrollr)
-* [three.js](https://threejs.org/)
 
 ## Team
-* [Martina Bracchi](mailto:martinabracchi.mb@gmail.com)   
+* [Martina Bracchi](mailto:martinabracchi.mb@gmail.com)  
 * [Silvia Casavola](mailto:silcasavola@gmail.com)
 * [Dario Faudella](mailto:dario.faudella@gmail.com)  
 * [Manuel Reale](mailto:manuel.reale2000@gmail.com)
