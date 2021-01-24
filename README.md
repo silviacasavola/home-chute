@@ -47,7 +47,7 @@ The homepage is designed to welcome the user and to prepare them to the fast dyn
 Once they are ready to enter the game, the user clicks on a button and a pop-up appears that counts down the time remaining to the end of the current match (max. 15 seconds).<br>
 The purpose of this section is to entertain the user until the start of a new match, so that they don't find themselves in the middle of a duel that has already started. It contains a mini-game: pieces of pasta falling from above and a colander that can be moved to catch as many pieces as possible.
 
-![home](../links/home.gif)
+![home](https://github.com/silviacasavola/home-chute/blob/main/links/home.gif)
 
 #### Waiting room
 The waiting room is a 5-second-long transitional phase between a match and another.<br>
