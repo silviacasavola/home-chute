@@ -63,7 +63,7 @@ Each match last 15 seconds. The short duration makes the single contest very qui
 The section "About" is a hidden overlay that slides over the screen from the left, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
 It contains information about the project and the elective course. A click on the symbol of the typical Italian hand gesture "mano a borsa" displays the names of the team members and of the professors.
 
-![homepage](links/about.gif)
+![about](links/about.gif)
 
 #### Ranking
 The section "Ranking" is a hidden overlay that slides over the screen from the right, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
