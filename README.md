@@ -47,7 +47,7 @@ The homepage is designed to prepare the user to the fast dynamics of the poll. T
 Once they are ready to enter the game, the user clicks on a button and a pop-up appears that counts the time remaining until the end of the current match (max. 15 seconds).<br>
 The purpose of this section is to entertain the user until the start of a new match, so that they don't find themselves in the middle of a duel that has already started. It contains a mini-game: pieces of pasta fall from above and a colander can be moved to catch as many as possible.
 
-(links/homepage.gif)
+![alt tag](links/homepage.gif)
 
 #### Waiting room
 The waiting room is a 5-seconds-long transitional phase between a match and another.<br>
