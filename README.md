@@ -56,7 +56,7 @@ All the matches last 15 seconds. The short duration makes the individual contest
 #### Ranking
 The ranking displays the general results of the whole game.
 
-#### Goodbye
+#### Exit page
 Exit page.
 
 ## The Code
