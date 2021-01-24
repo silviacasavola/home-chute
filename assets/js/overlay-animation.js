@@ -1,16 +1,3 @@
-// var angle = 0;
-//
-// function setup() {
-// frameRate(10);
-// }
-//
-// function draw() {
-//   angle++;
-//   select("#scroll").style.bottom = sin(angle);
-//   let scroll = select("#scroll");
-//   scroll.position(windowWidth/2 - scroll.width/2, windowHeight - sin(angle)*50)
-// }
-
 function openAbout() {
   document.getElementById("about-overlay").style.width = "100%";
 }
@@ -49,4 +36,9 @@ else {
    troppoitaliano.style.animationPlayState= "paused";
    troppoitaliano.style.transform = "rotate(-30deg)";
    }
+
+   // troppoitaliano.mouseOver(function () {
+   //   troppoitaliano.style.transform = "rotate(-30deg)";
+   //   console.log("beh oh")
+   // }
 }

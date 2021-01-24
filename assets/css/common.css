@@ -1,8 +1,13 @@
 :root {
-  --header-layer: 100;
-  --overlay-layer: 200;
+  --bottom-layer: 0;
+
+  --waiting-room-layer: 100;
+
+  --header-layer: 200;
+  --overlay-layer: 300;
 
   --margin:2vw;
+  --bottom-margin: 3vw;
 }
 
 body {
@@ -18,21 +23,27 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* LAYERS */
+#home-text-content, #scroll {  z-index: var(--bottom-layer)  }
+
+.overlay, .closebtn, #troppo-italiano {  z-index: var(--overlay-layer)  }
+
+#header, .marquee {  z-index: var(--header-layer)  }
+
+
+
 
 /* HEADER */
 #header{
   width: 100%;
   position: fixed;
   top: 0;
-  height: 10vh;
-  z-index: var(--header-layer);
-
   display: flex;
 }
 
 .header-btn{
 position: absolute;
-bottom: 0%;
+bottom: 10%;
 font-family: baskerville-urw;
 font-style: italic;
 font-weight: 400;
@@ -54,7 +65,10 @@ cursor: pointer;
   font-weight: 600;
   text-align: center;
   color: black;
-  font-size: 10vh;
+  font-size: 5vw;
+  bottom: 0%;
+  display: inline-flex;
+  /* border: solid; */
 }
 
 
@@ -64,7 +78,6 @@ cursor: pointer;
 .overlay {
     height: 100vh;
     position: fixed;
-    z-index: var(--overlay-layer);
     top: 0;
     background-color: white;
     overflow: hidden;
@@ -95,7 +108,6 @@ height: auto;
   position: absolute;
   right: var(--margin);
   top: var(--margin);
-  z-index: var(--overlay-layer);
   cursor: pointer;
 }
 
@@ -154,7 +166,6 @@ bottom: 0;
   bottom: 0;
   right: 0;
   width: 7vw;
-  z-index: var(--overlay-layer);
   cursor: pointer;
 
   animation: troppo-italiana 1s infinite;
@@ -188,23 +199,53 @@ bottom: 0;
   left: 100%;
 }
 
+table {
+border-collapse:collapse;
+position: relative;
+width:80%;
+text-align: left;
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-/* @media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-  .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-} */
+}
+td, tr {
+border:1px solid black;
+padding:8px;
+font-family: neue-haas-grotesk-display;
+font-size: 1.5vw;
+}
 
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-/* @media screen and (max-height: 450px) {
-  .overlay2 a {font-size: 20px}
-  .overlay2 .closebtn2 {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
-  }
-} */
+#table-div{
+  width: 100%;
+  top: 5%;
+  margin: auto;
+  text-align: center;
+  position: relative;
+  overflow: scroll;
+  max-height: 1000px
+
+}
+
+#tabella{
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+
+
+/* MARQUEE */
+.marquee {
+  bottom: 0;
+  position: fixed;
+  background-color: red;
+  height: 2em;
+}
+
+#text-marquee {
+  font-family: sans-serif;
+  font-size: 1vw;
+  color: white;
+  line-height: 1;
+  transform:translate(0, -50%);
+}

@@ -1,10 +1,18 @@
+/* LAYERS */
+#home-text-content, #scroll {  z-index: var(--bottom-layer)  }
+
+#skip-btn, #play-btn {  z-index: var(--header-layer)  }
+
+#waiting-room-container {  z-index: var(--waiting-room-layer)  }
+
+
 #title {
 -skrollr-animation-name:resizeTitle;
 }
 
 @-skrollr-keyframes resizeTitle {
-0  {margin-top: 30vh; font-size: 15vh }
-200	{margin-top: 0vh; font-size: 10vh }
+0  {margin-top: 30vh; font-size: 8vw }
+200	{margin-top: 0vh; font-size: 5vw }
 }
 
 #about-btn, #ranking-btn {
@@ -17,7 +25,7 @@
   }
 
 
-#page-content {
+#home-text-content {
   position: fixed;
   width: 100%;
 }
@@ -141,9 +149,7 @@ line-height:2.5;
   left: 50%;
   width: 13vw;
 margin: auto;
-z-index: 120;
 transform:translate(-50%, 0);
-/* border: solid; */
 -skrollr-animation-name: scroll-suggestion;
 
 -webkit-animation: bounce 2s 2;
@@ -153,9 +159,6 @@ transform:translate(-50%, 0);
 2200  {opacity: 1}
 2300	{opacity: 0}
 }
-
-/* 0 {animation-play-state: running}
-200 {animation-play-state: paused} */
 
 @-webkit-keyframes bounce {
   0%       { bottom:0vh; }
@@ -174,9 +177,9 @@ transform:translate(-50%, 0);
   font-style: italic;
   transform:translate(-50%, 0);
   transform-origin: center;
+  text-decoration: underline;
 
   cursor: pointer;
-  z-index: 120;
 
 -skrollr-animation-name:skip;
 }
@@ -191,24 +194,41 @@ transform:translate(-50%, 0);
 }
 
 /* PLAY BUTTON */
+
 #play-btn {
-  position: fixed;
-  font-size: 2vw;
-  border-style: groove;
-  border-width: 2px;
-  padding: 1vw;
-  bottom: 10vh;
-  text-decoration: none;
-  left: 50%;
-  color: black;
   font-family: neue-haas-grotesk-display;
+  position: fixed;
+  font-size: 1.5vw;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  bottom: 10vh;
+  left: 50%;
   transform:translate(-50%, 0);
   transform-origin: center;
-  z-index: 150;
+  border: solid 2px black;
+  padding: 1% 2%;
+  cursor: pointer;
+  outline: none;
   -skrollr-animation-name: display-play;
-  }
+}
+
+#play-btn:hover {
+font-style: italic;
+color: red;
+}
 
   @-skrollr-keyframes display-play {
-  0  {display: none}
+  2200  {display: none}
   2300	{display: block}
   }
+
+/* MARQUE */
+.marquee {
+-skrollr-animation-name: displayMarquee;
+}
+
+@-skrollr-keyframes displayMarquee {
+0  {bottom: -20vh}
+200	{bottom: 0vh}
+}

@@ -4,7 +4,7 @@
 
 During the exam, no slides are needed. Stress these three points in particular: the Public, Communicative goals and Context of use of your project.
 
-![alt tag](../master/links/banner.png)
+![alt tag](../master/links/index.png)
 
 ## About
 "Pasta Chute" is a WebApp built on [p5.js](https://p5js.org) that aims to connect people thanks to a topic of general interest: pasta.

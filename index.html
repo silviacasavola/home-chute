@@ -6,31 +6,40 @@
     <!-- Computer stylesheet -->
     <link rel='stylesheet' type='text/css' href='assets/css/home.css' media="screen and (min-width:992px)" data-skrollr-stylesheet >
     <link rel='stylesheet' type='text/css' href='assets/css/common.css' media="screen and (min-width:992px)" data-skrollr-stylesheet >
+    <link rel='stylesheet' type='text/css' href='assets/css/waiting-room.css' media="screen and (min-width:992px)">
     <!-- Mobile portrait mode -->
     <link rel='stylesheet' type='text/css' href='assets/css/mobile-portrait/home-mp.css' media="screen and (orientation:portrait) and (max-width:991px)" data-skrollr-stylesheet>
     <link rel='stylesheet' type='text/css' href='assets/css/mobile-portrait/common-mp.css' media="screen and (orientation:portrait) and (max-width:991px)" data-skrollr-stylesheet>
     <!-- Mobile landscape mode -->
     <link rel='stylesheet' type='text/css' href='assets/css/mobile-landscape/home-ml.css' media="screen and (orientation:landscape) and (max-width:991px)" data-skrollr-stylesheet>
     <link rel='stylesheet' type='text/css' href='assets/css/mobile-landscape/common-ml.css' media="screen and (orientation:landscape) and (max-width:991px)" data-skrollr-stylesheet>
+    <!-- Fonts stylesheet -->
     <link rel="stylesheet" href="https://use.typekit.net/ttj2hjf.css">
+
     <script src="assets/js/p5.min.js"></script>
-    <!-- <script src="assets/js/home.js"></script> -->
-    <script src="assets/js/sketch1.js"></script>
+
+    <script src="assets/js/overlay-animation.js"></script>
+    <script src="assets/js/waiting-room.js"></script>
 
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
 
   </head>
 
 <body>
+<!-- HEADER -->
 <div id="header">
 <span onclick='openAbout()'class='header-btn' id='about-btn'> About</span>
 <span onclick='openRan()'class='header-btn' id='ranking-btn'>Ranking</span>
 <div id='title'>PASTA CHUTE</div>
 </div>
 
-<div id="animated-background" style="width: 100vw; height: 200vh; z-index: -50; position: absolute; top: 0; left: 0"></div>
 
-<div id="page-content">
+<!-- ANIMATED BACKGROUND -->
+<!-- <div id="animated-background" style="width: 100vw; height: 200vh; z-index: -50; position: absolute; top: 0; left: 0"></div> -->
+
+
+<!-- TEXT CONTENT -->
+<div id="home-text-content">
 <div class="paragraph" id="p1">Pasta is good<br></div>
 <div class="paragraph" id="p2"><br>but which is the best?</div>
 <div class="paragraph" id="p3">You're about to enter the biggest pasta poll in history.</div>
@@ -41,14 +50,33 @@
 <div class="paragraph" id="p8">Are you ready?</div>
 </div>
 
+
 <!-- SCROLL SUGGESTION -->
 <img id='scroll' src='assets/img/freccia.png'>
 
 <!-- SKIP BTN -->
-<a id="skip-btn" href="poll.html">Skip</a>
+<a id="skip-btn">Skip</a>
 
 <!-- PLAY BUTTON -->
-<a href="poll.html" id="play-btn">YES</a>
+<button id="play-btn">YES</button>
+
+
+
+<!-- WAITING ROOM -->
+<div id="waiting-room-container" style="width: 100vw; height: 100vh">
+
+<div id="waiting-room-text">
+<div id="waiting-room-message">A match is in progress.<br>You will enter the poll in</div>
+<div id="waiting-room-timer"></div>
+</div>
+
+<div id="score"></div>
+</div>
+
+</div>
+
+
+
 
 
 <!--ABOUT -->
@@ -71,15 +99,75 @@
 
 </div>
 
+
+
 <!--RANKING -->
-<div class="overlay-content">
 <div id="ranking-overlay" class="overlay">
+
+<div class="overlay-content">
+
 <a  class="closebtn" onclick="closeRan()"><img class='close-img' src='assets/img/clsbtn.png'></a>
 <p id='ranking-header'  class="overlay-header">Ranking</p>
+
+<div id='table-div'>
+  <table id='tabella'>
+    <tr><td>Penne</td><td>24</tr>
+      <tr><td>Penne</td><td>24</tr>
+      <tr><td>Penne</td><td>24</tr>
+      <tr><td>Penne</td><td>24</tr>
+        <tr><td>Penne</td><td>24</tr>
+        <tr><td>Penne</td><td>24</tr>
+        <tr><td>Penne</td><td>24</tr>
+          <tr><td>Penne</td><td>24</tr>
+          <tr><td>Penne</td><td>24</tr>
+          <tr><td>Penne</td><td>24</tr>
+            <tr><td>Penne</td><td>24</tr>
+            <tr><td>Penne</td><td>24</tr>
+            <tr><td>Penne</td><td>24</tr>
+              <tr><td>Penne</td><td>24</tr>
+              <tr><td>Penne</td><td>24</tr>
+              <tr><td>Penne</td><td>24</tr>
+                <tr><td>Penne</td><td>24</tr>
+                <tr><td>Penne</td><td>24</tr>
+                <tr><td>Penne</td><td>24</tr>
+                  <tr><td>Penne</td><td>24</tr>
+                  <tr><td>Penne</td><td>24</tr>
+                  <tr><td>Penne</td><td>24</tr>
+                    <tr><td>Penne</td><td>24</tr>
+                    <tr><td>Penne</td><td>24</tr>
+                    <tr><td>Penne</td><td>24</tr>
+
+    </table>
 </div>
 
 </div>
 </div>
+
+<!-- MARQUEE -->
+<marquee class="marquee" width="100%" behavior="scroll">
+      <p id="text-marquee">
+
+      WHY ONLY HAVE SPAGHETTI WESTERNS IF YOU CAN HAVE ALL KINDS OF PASTA WESTERNS? &emsp;&emsp;&emsp;&emsp;&emsp;
+      LET'S SEE WHAT PASTA YOU ARE MADE OF. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      LAUGH LAUGH, THAT MUM MADE GNOCCHI. &emsp;&emsp;&emsp;&emsp;&emsp;
+      WHO HAS BREAD DOESN'T HAVE TEETH AND WHO HAS TEETH DOESN'T HAVE BREAD. &emsp;&emsp;&emsp;&emsp;&emsp;
+      WE WENT FROM THE PAN TO THE GRILL. &emsp;&emsp;&emsp;&emsp;&emsp;
+      IF IT'S NOT SOUP, IT'S WET BREAD. &emsp;&emsp;&emsp;&emsp;&emsp;
+      THIS IS NOT FLOUR FROM YOUR BAG. &emsp;&emsp;&emsp;&emsp;&emsp;
+      WHAT A PIZZA! &emsp;&emsp;&emsp;&emsp;&emsp;
+      IT'S NOT BREAD FOR YOUR TEETH. &emsp;&emsp;&emsp;&emsp;&emsp;
+      WE ARE AT THE FRUIT. &emsp;&emsp;&emsp;&emsp;&emsp;
+      HE'S A PIECE OF BREAD. &emsp;&emsp;&emsp;&emsp;&emsp;
+      YOU NEED TO FIGHT BREAD WITH FOCACCIA. &emsp;&emsp;&emsp;&emsp;&emsp;
+      SOMETHING IS BOILING IN THE POT. &emsp;&emsp;&emsp;&emsp;&emsp;
+      WE ARE ON BREAD AND WATER. &emsp;&emsp;&emsp;&emsp;&emsp;
+      IDEM WITH POTATOES. &emsp;&emsp;&emsp;&emsp;&emsp;
+      I WAS LEFT WITH MY MOUTH DRY. &emsp;&emsp;&emsp;&emsp;&emsp;
+
+    </p>
+</marquee>
+
+
 
 <!-- SKROLL -->
 	<script src="assets/js/skrollr.stylesheets.min.js" type="text/javascript"></script>

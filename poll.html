@@ -3,30 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
-    <style> body {padding: 0; margin: 0;} </style>
-    <script src="p5.min.js"></script>
-    <script src="p5.sound.min.js"></script>
-  <script language="javascript" type="text/javascript" src="libraries/matter.js"></script>
-    <!-- <script src="sketch.js"></script> -->
-    <script src="assets/js/sketch1.js"></script>
-
-  <script language="javascript" type="text/javascript" src="box.js"></script>
-  <script language="javascript" type="text/javascript" src="box2.js"></script>
-  
-  <!-- Computer stylesheet -->
-  <link rel='stylesheet' type='text/css' href='assets/css/poll.css' media="screen and (min-width:992px)" data-skrollr-stylesheet >
-  <link rel='stylesheet' type='text/css' href='assets/css/common.css' media="screen and (min-width:992px)" data-skrollr-stylesheet >
-  <!-- Mobile portrait mode -->
-  <link rel='stylesheet' type='text/css' href='assets/css/mobile-portrait/poll-mp.css' media="screen and (orientation:portrait) and (max-width:991px)" data-skrollr-stylesheet>
-  <link rel='stylesheet' type='text/css' href='assets/css/mobile-portrait/common-mp.css' media="screen and (orientation:portrait) and (max-width:991px)" data-skrollr-stylesheet>
-  <!-- Mobile landscape mode -->
-  <link rel='stylesheet' type='text/css' href='assets/css/mobile-landscape/poll-ml.css' media="screen and (orientation:landscape) and (max-width:991px)" data-skrollr-stylesheet>
-  <link rel='stylesheet' type='text/css' href='assets/css/mobile-landscape/common-ml.css' media="screen and (orientation:landscape) and (max-width:991px)" data-skrollr-stylesheet>
-
+    <!-- Computer stylesheet -->
+    <link rel='stylesheet' type='text/css' href='assets/css/poll.css' media="screen and (min-width:992px)" data-skrollr-stylesheet >
+    <link rel='stylesheet' type='text/css' href='assets/css/common.css' media="screen and (min-width:992px)" data-skrollr-stylesheet >
+    <!-- Mobile portrait mode -->
+    <link rel='stylesheet' type='text/css' href='assets/css/mobile-portrait/poll-mp.css' media="screen and (orientation:portrait) and (max-width:991px)" data-skrollr-stylesheet>
+    <link rel='stylesheet' type='text/css' href='assets/css/mobile-portrait/common-mp.css' media="screen and (orientation:portrait) and (max-width:991px)" data-skrollr-stylesheet>
+    <!-- Mobile landscape mode -->
+    <link rel='stylesheet' type='text/css' href='assets/css/mobile-landscape/poll-ml.css' media="screen and (orientation:landscape) and (max-width:991px)" data-skrollr-stylesheet>
+    <link rel='stylesheet' type='text/css' href='assets/css/mobile-landscape/common-ml.css' media="screen and (orientation:landscape) and (max-width:991px)" data-skrollr-stylesheet>
+    <!-- Fonts stylesheet -->
     <link rel="stylesheet" href="https://use.typekit.net/ttj2hjf.css">
-</head>
+
+    <script src="assets/js/p5.min.js"></script>
+
+    <!-- <script src="assets/js/poll.js"></script> -->
+    <script src="assets/js/overlay-animation.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+
+  </head>
 
 <body>
+<!-- HEADER -->
 <div id="header">
 <span onclick='openAbout()'class='header-btn' id='about-btn'> About</span>
 <span onclick='openRan()'class='header-btn' id='ranking-btn'>Ranking</span>
@@ -38,24 +37,31 @@
 <div id="warning-message">Rotate your screen to play!</div>
 </div>
 
-<!-- POLL -->
+
+
+<!-- !!!!!!!!!!!!!INSERT ALL PAGE CONTENT HERE!!!!!!!!!!!!! -->
 <div id="poll"></div>
+
+
+
+
+
 
 
 <!--ABOUT -->
 <div id="about-overlay" class="overlay">
 
-<!-- Button to close the overlay navigation -->
+<!-- Button to close the overlay-->
 <a  class="closebtn" onclick="closeAbout()"><img class='close-img'src='assets/img/clsbtn.png'></a>
 
 <!-- Overlay content -->
 <div class="overlay-content">
 <p id='about-header' class="overlay-header">About</p>
-<p id='about-text'>Pasta chute is a project developed for the course of Creative Coding of Politecnico di Milano. Pasta is good, but which is the best? Our team wants to investigate the most controversial subject in our country. </p>
-<img onclick='showCredits()'id='freccia' src='assets/img/freccia.png' >
-<div id='crediti'>
-<p id='crediti-text'>Martina Bracchi - Silvia Casavola - Dario Faudella - Manuel Reale - Donato Renzulli<br>
-Politecnico di Milano</p>
+<p id='about-text'>"Pasta Chute" is a virtual common space developed for the course of <a href="https://drawwithcode.github.io/">Creative Coding</a> at Politecnico di Milano. Pasta is good, but which is the best? Our team wants to investigate the most controversial subject in our country. </p>
+<img onclick='showCredits()' id='troppo-italiano' src='assets/img/troppo-italiano.png' >
+<div id='credits'>
+<div id="team" class="credits-paragraph">Team: <a href="mailto:martinabracchi.mb@gmail.com">Martina Bracchi</a> - <a href="mailto:silcasavola@gmail.com">Silvia Casavola</a> - <a href="mailto:dario.faudella@gmail.com">Dario Faudella</a> - <a href="mailto:manuel.reale2000@gmail.com">Manuel Reale</a> - <a href="mailto:donren.99@gmail.com">Donato Renzulli</a></div><br>
+<div id="faculty" class="credits-paragraph">Faculty: Michele Mauri - Andrea Benedetti - Tommaso Elli</div>
 </div>
 
 </div>
@@ -63,15 +69,36 @@ Politecnico di Milano</p>
 </div>
 
 <!--RANKING -->
+<div class="overlay-content">
 <div id="ranking-overlay" class="overlay">
 <a  class="closebtn" onclick="closeRan()"><img class='close-img' src='assets/img/clsbtn.png'></a>
-
-<!-- Overlay content -->
-<div class="ranking-content">
 <p id='ranking-header'  class="overlay-header">Ranking</p>
+</div>
 
 </div>
-</div>
+
+<!-- MARQUEE -->
+<marquee class="marquee" width="100%" behavior="scroll">
+      <p id="text-marquee">
+
+      WHY ONLY HAVE SPAGHETTI WESTERNS IF YOU CAN HAVE ALL KINDS OF PASTA WESTERNS? &emsp;&emsp;&emsp;&emsp;&emsp;
+      LET'S SEE WHAT PASTA YOU ARE MADE OF. &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      LAUGH LAUGH, THAT MUM MADE GNOCCHI. &emsp;&emsp;&emsp;&emsp;&emsp;
+      WHO HAS BREAD DOESN'T HAVE TEETH AND WHO HAS TEETH DOESN'T HAVE BREAD. &emsp;&emsp;&emsp;&emsp;&emsp;
+      WE WENT FROM THE PAN TO THE GRILL. &emsp;&emsp;&emsp;&emsp;&emsp;
+      IF IT'S NOT SOUP, IT'S WET BREAD. &emsp;&emsp;&emsp;&emsp;&emsp;
+      THIS IS NOT FLOUR FROM YOUR BAG. &emsp;&emsp;&emsp;&emsp;&emsp;
+      WHAT A PIZZA! &emsp;&emsp;&emsp;&emsp;&emsp;
+      IT'S NOT BREAD FOR YOUR TEETH. &emsp;&emsp;&emsp;&emsp;&emsp;
+      WE ARE AT THE FRUIT. &emsp;&emsp;&emsp;&emsp;&emsp;
+      YOU NEED TO FIGHT BREAD WITH FOCACCIA. &emsp;&emsp;&emsp;&emsp;&emsp;
+      SOMETHING IS BOILING IN THE POT. &emsp;&emsp;&emsp;&emsp;&emsp;
+      WE ARE ON BREAD AND WATER. &emsp;&emsp;&emsp;&emsp;&emsp;
+      IDEM WITH POTATOES. &emsp;&emsp;&emsp;&emsp;&emsp;
+      I WAS LEFT WITH MY MOUTH DRY. &emsp;&emsp;&emsp;&emsp;&emsp;
+
+    </p>
+</marquee>
 
 </body>
 </html>
