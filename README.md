@@ -87,9 +87,9 @@ One of the design challenges was creating a web app that was true to our vision 
 The core idea was to create a cool engaging web experience regardless of the simplicity of the chosen topic.<br>
 From the get-go we had a clear idea of how the app should look like from the typographical point of view: the juxtaposition of a bold grotesk font and an italic serif. The idea was to pair the textual elements with illustrations of the various formats of pasta, drawn in a "wireframe" style.<br>
 One of the challenges that came up during the illustration process was making sure they looked in line with the rest of the website, not being too organically realistic - which would clash with the overall look - or geometrically rigid, which would make the pieces look stiff when falling and piling up.<br>
-
+<br>
 ![illustyles](links/illustyles.png)
-
+<br>
 <br>
 From the perspective of HTML and CSS design it wasn't easy to fit all of the information in as few HTML documents as possible.<br>
 It also wasn't easy to make the website responsive for viewing and interacting on mobile, considering the different interaction methods between the two types of devices and the change in proportions and screen ratios.
