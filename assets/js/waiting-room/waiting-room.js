@@ -1,9 +1,5 @@
   var waitingRoomContainer;
 
-  var timer = 100000;
-
-  var ready = false;
-
   var pastaimgs = [];
   var pasta = [];
   var i;
@@ -20,8 +16,6 @@
   function setup() {
 
   waitingRoomContainer = select("#waiting-room-container");
-  waitingRoomContainer.hide();
-
 
   let gameCnv = createCanvas(windowWidth, windowHeight)
   gameCnv.parent(waitingRoomContainer);
@@ -40,26 +34,8 @@
     colander = loadImage("./assets/img/colander.png")
   }
 
+
   function draw() {
-  clear()
-
-  // UPDATES THE TIMER
-  if (timer>0) {timer--;}
-  select("#waiting-room-timer").html(timer);
-
-  // THE USER IS READY TO PLAY
-  select("#play-btn").mouseClicked(function () {
-    ready = true;
-  })
-
-  select("#skip-btn").mouseClicked(function () {
-    ready = true;
-  })
-
-  if (ready==true) {
-    openPoll()
-  }
-
   // TOGGLES THE FUNCTIONS TO CREATE PASTA
   for (i=1; i<23; i++) {
   pasta[i].show();
@@ -91,8 +67,6 @@
 
   // CREATES PIECES OF PASTA
     this.show = function() {
-    // let pastaW = (cnvW/18);
-    // let pastaH = (cnvW/18);
 
     image(this.img, this.x, this.y);
     }
@@ -118,33 +92,9 @@
     {
       this.y = 0;
 
-      if (ready == true) {
+      if (waitingRoomContainer.style.display = "block") {
       score++;
     }
   }
   }
-  }
-
-
-  // OPEN POLL
-  function openPoll () {
-  loop()
-
-// if a match is in progress, it display the mini-game
-
-  if (timer >= 3) {
-  select("#play-btn").hide();
-  select("#skip-btn").hide();
-  select("#scroll").hide();
-  select("#home-text-content").hide();
-  waitingRoomContainer.show();
-  waitingRoomContainer.style.display = "block";
-  waitingRoomContainer.addClass('activated')
-  select("#waiting-room-text").addClass("activated")
-  select("#score").addClass("activated")
-  }
-
-  // if the match is over, it opens the poll
-
-  else {window.open("poll.html", "_self")}
   }

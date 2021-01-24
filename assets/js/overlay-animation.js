@@ -39,6 +39,5 @@ else {
 
    // troppoitaliano.mouseOver(function () {
    //   troppoitaliano.style.transform = "rotate(-30deg)";
-   //   console.log("beh oh")
    // }
 }
