@@ -20,7 +20,7 @@ b. [Waiting room](#waiting-room)<br>
 c. [Poll](#poll)<br>
 d. [About](#about)<br>
 e. [Ranking](#ranking)<br>
-f. [Exit page](#exit-page)<br>
+f. [Thank you page](#thank-you-page)<br>
 3. [The Code](#the-code)<br>
 a. [Tools](#tools)<br>
 b. [Coding challenges](#coding-challenges)<br>
@@ -50,7 +50,7 @@ The purpose of this section is to entertain the user until the start of a new ma
 #### Waiting room
 The waiting room is a 5-seconds-long transitional phase between a match and another.<br>
 A red checkered, truly Italian-stereotype-style tablecloth flutters in the screen and falls at the end of the timer, uncovering the actual poll. While in this phase, online users can see each other cursors, in the form of forks.<br>
-If one is tired to play, there is a button that leads to the exit page.<br>
+If one is tired to play, there is a button that leads to the Thank you page.<br>
 The tablecloth is a 3D object built in [three.js](https://threejs.org/), which was taken from [Memetic Warfare Archive](https://densitydesign.github.io/teaching-dd15/course-results/es03/group03/).
 
 #### Poll
@@ -65,8 +65,8 @@ It contains information about the project and the course. A click on the picture
 The section "Ranking" is an hidden overlay that slides to the left, when opened through the corresponding button in the header.<br>
 It contains the global results of the game. It ranks all the types of pasta by the total clicks received.
 
-#### Exit page
-Exit page.
+#### Thank you page
+This page is accessed through the waiting room, when the user is tired of playing and wants to leave the website. It contains a piece of trivia about pasta, which is randomly selected from an array.
 
 ## The Code
 The app was built mostly in p5.js. The library matter.js was used to render the mechanics of the pieces of pasta falling from above.
@@ -83,6 +83,8 @@ The app was built mostly in p5.js. The library matter.js was used to render the 
 
 #### Design challenges
 (...)
+- responsive
+- non lo so
 
 (Questa parte viene da un altro read-me, vediamo come inserire parti di codice)
 
