@@ -1,11 +1,11 @@
 :root {
+/* LAYERS Z-INDEX */
   --bottom-layer: 0;
-
   --waiting-room-layer: 100;
-
   --header-layer: 200;
   --overlay-layer: 300;
 
+/* MARGINS */
   --margin:2vw;
   --bottom-margin: 3vw;
 }
@@ -23,7 +23,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
-/* LAYERS */
+/* LAYERS Z-INDEX */
 #home-text-content, #scroll {  z-index: var(--bottom-layer)  }
 
 .overlay, .closebtn, #troppo-italiano {  z-index: var(--overlay-layer)  }

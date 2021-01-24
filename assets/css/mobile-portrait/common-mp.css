@@ -1,10 +1,14 @@
 :root {
+/* LAYERS Z-INDEX */
+  --bottom-layer: 0;
+  --waiting-room-layer: 100;
+  --header-layer: 200;
+  --overlay-layer: 300;
+
+/* MARGINS     */
   --mobile-margin: 4vw;
   --mobile-topmargin: 2vw;
   --mobile-bottom-margin: 8vh;
-
-  --header-layer: 100;
-  --overlay-layer: 200;
 }
 
 body {
@@ -20,9 +24,17 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+/* LAYERS Z-INDEX */
+#home-text-content, #scroll {  z-index: var(--bottom-layer)  }
+
+.overlay, .closebtn, #troppo-italiano {  z-index: var(--overlay-layer)  }
+
+#header, .marquee {  z-index: var(--header-layer)  }
+
 
 
 #header{
+  top:0;
   background-color: white;
   width: 100%;
   position: fixed;
@@ -181,4 +193,22 @@ bottom: var(--mobile-bottom-margin);
 #ranking-overlay {
   width: 100%;
   left: 100%;
+}
+
+
+
+/* MARQUEE */
+.marquee {
+  bottom: 0;
+  position: fixed;
+  background-color: red;
+  height: 2em;
+}
+
+#text-marquee {
+  font-family: sans-serif;
+  font-size: 3vw;
+  color: white;
+  line-height: 1;
+  transform:translate(0, -50%);
 }
