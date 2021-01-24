@@ -47,6 +47,7 @@ Once they are ready to enter the game, the user clicks on a button and a pop-up 
 #### Waiting room
 The waiting room is a 5-seconds-long transitional phase between a match and another.<br>
 A red checkered, truly Italian-stereotype-style tablecloth flutters in the screen and falls at the end of the timer, uncovering the actual poll. While in this phase, online users can see each other cursors, in the form of forks.<br>
+The tablecloth is a 3D object built in three.js [three.js](https://threejs.org/), which was taken from [Memetic Warfare Archive](https://densitydesign.github.io/teaching-dd15/course-results/es03/group03/).
 If one is tired to play, there is a button that leads to the exit page.
 
 #### Poll
