@@ -257,7 +257,7 @@ transform:translate(-50%, 0);
 
 
     #waiting-room-text {
-      position: absolute;
+      position: fixed;
       width: 100%;
       top: 30vh;
       text-align: center;
@@ -277,7 +277,7 @@ transform:translate(-50%, 0);
     }
 
     #score {
-    position: absolute;
+    position: fixed;
     font-family: neue-haas-grotesk-display;
     font-weight: 600;
     font-size: 1vw;
