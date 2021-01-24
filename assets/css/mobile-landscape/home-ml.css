@@ -126,10 +126,9 @@
 /* SCROLL ARROW */
 #scroll {
   position: fixed;
-  bottom: 0;
+  bottom: 10vh;
   left: 50%;
   width: 15vw;
-  height: 15vw;
 margin: auto;
 z-index: 120;
 transform:translate(-50%, 0);
@@ -144,9 +143,9 @@ transform:translate(-50%, 0);
 }
 
 @-webkit-keyframes bounce {
-  0%       { bottom:0vh; }
-  50%      { bottom:8vh; }
-  100%     {bottom:0vh;}
+  0%       { bottom:10vh; }
+  50%      { bottom:18vh; }
+  100%     {bottom:10vh;}
 }
 
 
@@ -177,16 +176,16 @@ transform:translate(-50%, 0);
 #play-btn {
   position: fixed;
   font-size: 2vw;
-  border-style: groove;
-  border-size: 10px;
-  padding: 1vw;
-  bottom: 10vh;
-  text-decoration: none;
-  left: 50%;
   color: black;
-  font-family: neue-haas-grotesk-display;
+  background-color: white;
+  border-radius: 10px;
+  bottom: 10vh;
+  left: 50%;
   transform:translate(-50%, 0);
   transform-origin: center;
+  border: solid 2px black;
+  padding: 1% 2%;
+  outline: none;
   -skrollr-animation-name: play-btn;
   }
 
