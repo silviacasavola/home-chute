@@ -18,8 +18,9 @@ b. [Context of use](#context-of-use)<br>
 a. [Homepage](#homepage)<br>
 b. [Waiting room](#waiting-room)<br>
 c. [Poll](#poll)<br>
-d. [Ranking](#ranking)<br>
-e. [Exit page](#exit-page)<br>
+d. [About](#about)<br>
+e. [Ranking](#ranking)<br>
+f. [Exit page](#exit-page)<br>
 3. [The Code](#the-code)<br>
 a. [Tools](#tools)<br>
 b. [Coding challenges](#coding-challenges)<br>
@@ -28,13 +29,14 @@ c. [Design challenges](#design-challenges)<br>
 
 ## Project idea
 #### Concept
-As harmless as it might look, pasta often ends up at the center of animated debates, especially in our country. Our team wanted to trigger the same fierceness/partecipation/sensitivity, by asking users to root for their favorite type of pasta.<br>
+As harmless as it might look, pasta often ends up at the center of animated debates, especially in our country.<br>
+Our team wanted to trigger the same fierceness/partecipation/sensitivity, by asking users to root for their favorite type of pasta.<br>
 The purpose is light and humorous: to entertain people through a very simple, yet engaging experience and to make them feel part of something big, despite (or maybe thanks to) the trivial subject.
 The creative process is very similar to the one of memes, as it starts from picking a very simple piece of culture that has a surprisingly big impact because of its universality.
 
 
 #### Context of use
-The project addresses a broad target audience, but it's expected to spark interest / be appreciated / succeed mostly among young people.
+The project addresses a broad target audience, but it's expected to spark interest / be appreciated / succeed mostly among young people.<br>
 The game is always ongoing and there are no special events, so that people can jump in and fool around whenever they want. This is why it was very important to us to make the game suitable for both computers and mobile devices.<br>
 Friends can arrange to visit the website at the same time to play together or against each other, but one can also play alone, fooling around, asking themselves what pasta they prefer, discovering new types and browsing the records.
 
@@ -42,20 +44,26 @@ Friends can arrange to visit the website at the same time to play together or ag
 ## Structure
 #### Homepage
 The homepage is designed to prepare the user to the fast dynamics of the poll. The library [skrollr](https://github.com/Prinzhorn/skrollr) was used to display a sequence of very concise information about the attitude they need to take: be fierce, be fast and ready to click.<br>
-Once they are ready to enter the game, the user clicks on a button and a pop-up appears that counts the time remaining until the end of the current match (max. 15 seconds). The purpose of this section is to entertain the user until the start of a new match, so that they don't find themselves in the middle of a duel that has already started. It contains a mini-game: pieces of pasta fall from above and a colander can be moved to catch as many as possible.
+Once they are ready to enter the game, the user clicks on a button and a pop-up appears that counts the time remaining until the end of the current match (max. 15 seconds).<br>
+The purpose of this section is to entertain the user until the start of a new match, so that they don't find themselves in the middle of a duel that has already started. It contains a mini-game: pieces of pasta fall from above and a colander can be moved to catch as many as possible.
 
 #### Waiting room
 The waiting room is a 5-seconds-long transitional phase between a match and another.<br>
 A red checkered, truly Italian-stereotype-style tablecloth flutters in the screen and falls at the end of the timer, uncovering the actual poll. While in this phase, online users can see each other cursors, in the form of forks.<br>
-The tablecloth is a 3D object built in three.js [three.js](https://threejs.org/), which was taken from [Memetic Warfare Archive](https://densitydesign.github.io/teaching-dd15/course-results/es03/group03/).
-If one is tired to play, there is a button that leads to the exit page.
+If one is tired to play, there is a button that leads to the exit page.<br>
+The tablecloth is a 3D object built in [three.js](https://threejs.org/), which was taken from [Memetic Warfare Archive](https://densitydesign.github.io/teaching-dd15/course-results/es03/group03/).
 
 #### Poll
-The poll works in a very simple way. The screen is split in two; each side represents a type of pasta. The user needs to locate their mouse (or their finger) on the side of the pasta they want to vote for and click as many times as possible to make it win. Any click generates a piece of the chosen pasta in that point of the screen, which falls on the ground and gathers on the others, thanks to the mechanics of [matter.js](https://brm.io/matter-js/). This way, it's very easy to sense what pasta is winning and the contribution of the other users, who generate pasta in turn.
+The poll works in a very simple way. The screen is split in two; each side represents a type of pasta. The user needs to locate their mouse (or their finger) on the side of the pasta they want to vote for and click as many times as possible to make it win. Any click generates a piece of the chosen pasta in that point of the screen, which falls on the ground and gathers on the others, thanks to the mechanics of [matter.js](https://brm.io/matter-js/). This way, it's very easy to sense what pasta is winning and the contribution of the other users, who generate pasta in turn.<br>
 All the matches last 15 seconds. The short duration makes the individual contests very quick and ephemeral, but each result contributes to the general ranking.
 
 #### Ranking
-The ranking displays the general results of the whole game.
+The section "About" is an hidden overlay that slides to the right, when opened through the corresponding button in the header.<br>
+It contains information about the project and the course. A click on the picture of the typical Italian handgesture "mano a borsa" displays the names of the team members and the professors'.
+
+#### Ranking
+The section "Ranking" is an hidden overlay that slides to the left, when opened through the corresponding button in the header.<br>
+It contains the global results of the game. It ranks all the types of pasta by the total clicks received.
 
 #### Exit page
 Exit page.
