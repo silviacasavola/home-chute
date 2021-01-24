@@ -2,9 +2,7 @@
 - Design challenges. Which were the most challenging aspects of your project, design-wise? How did you solve your design problems? Document this part with images, schemas, diagrams and screenshots from the prototype.
 - Coding challenges. Which were the most challenging aspects of your project, coding-wise? How did you solve your coding problems? Document this part with code snippets, links to tutorials you followed or resources you found online.
 
-During the exam, no slides are needed. Stress these three points in particular: the Public, Communicative goals and Context of use of your project.
-
-![alt tag](../master/links/index.png)
+![alt tag](../master/links/heading.png)
 
 ## About
 "Pasta Chute" is a virtual common space built on [p5.js](https://p5js.org) that aims to connect people thanks to a topic of general interest: pasta.
