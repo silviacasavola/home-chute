@@ -104,7 +104,7 @@ map.addControl(
 );
 ```
 The main challenge was based around having such a large number of interactions that need to be registered, remembered and broadcasted to everyone.
-We overcame this challenge by relying on a local JSON file that is updated each time a change to the present version happens, by sending signals from the client to the server and then back to all the other clients with [mappa.js](https://socket.io), an engine that enables real-time, bidirectional and event-based communication.
+We overcame this challenge by relying on a local JSON file that is updated each time a change to the present version happens, by sending signals from the client to the server and then back to all the other clients with [socket.io](https://socket.io), an engine that enables real-time, bidirectional and event-based communication.
 As an example, when someone sends a present, a JSON variable will be automatically sent to the server holding all the present information:
 ```javascript
 //Variable holding the new present information
