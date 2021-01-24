@@ -47,7 +47,7 @@ The homepage is designed to welcome the user and to prepare them to the fast dyn
 Once they are ready to enter the game, the user clicks on a button and a pop-up appears that counts down the time remaining to the end of the current match (max. 15 seconds).<br>
 The purpose of this section is to entertain the user until the start of a new match, so that they don't find themselves in the middle of a duel that has already started. It contains a mini-game: pieces of pasta falling from above and a colander that can be moved to catch as many pieces as possible.
 
-![homepage](links/homepage.gif)
+![homepage](links/home.gif)
 
 #### Waiting room
 The waiting room is a 5-second-long transitional phase between a match and another.<br>
@@ -62,6 +62,8 @@ Each match last 15 seconds. The short duration makes the single contest very qui
 #### About
 The section "About" is a hidden overlay that slides over the screen from the left, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
 It contains information about the project and the elective course. A click on the symbol of the typical Italian hand gesture "mano a borsa" displays the names of the team members and of the professors.
+
+![about](links/about.png)
 
 #### Ranking
 The section "Ranking" is a hidden overlay that slides over the screen from the right, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
@@ -81,10 +83,10 @@ The app was built mostly in [p5.js](https://p5js.org/). The library [matter.js](
 * [three.js](https://threejs.org/)
 
 #### Design challenges
-One of the design challenges was creating a web app that was true to our vision of a simple, brutalist website with a cool graphic setup and a conscious an punctual use of colour.<br>
+One of the design challenges was creating a web app that was true to our vision of a simple, brutalist website with a cool graphic setup and a conscious and punctual use of colour.<br>
 The core idea was to create a cool engaging web experience regardless of the simplicity of the chosen topic.<br>
-From the get-go we had a clear idea of how the app should look like from the typographical point of view: the juxtaposition of a bold grotesk font and an italic serif. The idea was to pair the textual elements with illustrations of the various formats of pasta, in a "wireframe" style.<br>
-One of the challenges that came up during the illustration process was making sure they looked in line with the rest of the website, not being too organically realistic - which would clash with the overall look - or geometrically rigid - which would make the pieces look stiff when falling and piling up.<br>
+From the get-go we had a clear idea of how the app should look like from the typographical point of view: the juxtaposition of a bold grotesk font and an italic serif. The idea was to pair the textual elements with illustrations of the various formats of pasta, drawn in a "wireframe" style.<br>
+One of the challenges that came up during the illustration process was making sure they looked in line with the rest of the website, not being too organically realistic - which would clash with the overall look - or geometrically rigid, which would make the pieces look stiff when falling and piling up.<br>
 * *inserire foto dei diversi tipi di illustrazioni di pasta*
 <br>
 From the perspective of HTML and CSS design it wasn't easy to fit all of the information in as few HTML documents as possible.<br>
