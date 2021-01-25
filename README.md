@@ -90,13 +90,7 @@ One of the challenges that came up during the illustration process was making su
 From the perspective of HTML and CSS design it wasn't easy to fit all of the information in as few HTML documents as possible.<br>
 It also wasn't easy to make the website responsive for viewing and interacting on mobile, considering the different interaction methods between the two types of devices and the change in proportions and screen ratios.
 
-(...)
-- non lo so
-
 #### Coding challenges
-(...)
-
-(Questa parte viene da un altro read-me, vediamo come inserire parti di codice)
 
 We used Mapbox for the main part of the WebApp. To intergrate Mapbox GL inside p5.js we used a library called [mappa.js](https://mappa.js.org), a tool that facilitates work between the canvas elements and the existing map libraries and APIs.
 We slightly changed mappa.js to add a gps button that helps the user to go back to his position:
