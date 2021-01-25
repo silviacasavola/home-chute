@@ -11,8 +11,8 @@
 }
 
 @-skrollr-keyframes resizeTitle {
-0  {margin-top: 30vh; font-size: 8vw }
-200	{margin-top: 0vh; font-size: 7vw }
+0  {margin-top: 18vh; font-size: 9vw }
+200	{margin-top: 0vh; font-size: 5vw }
 }
 
 #about-btn, #ranking-btn {
@@ -29,6 +29,8 @@
   position: fixed;
   width: 100%;
 }
+
+#animated-background {width: 54vw; z-index: -50; position: fixed; left: 22vw; bottom: 0}
 
 .paragraph {
   width: 100%;

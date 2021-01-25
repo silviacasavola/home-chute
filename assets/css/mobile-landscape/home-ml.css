@@ -20,6 +20,8 @@
   width: 100%;
 }
 
+#animated-background {width: 100vw; z-index: -50; position: fixed; left: 0; bottom: 0}
+
 .paragraph {
   width: 100%;
   position: inherit;
