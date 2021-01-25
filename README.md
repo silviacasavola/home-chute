@@ -91,10 +91,12 @@ From the perspective of HTML and CSS design it wasn't easy to fit all of the inf
 It also wasn't easy to make the website responsive for viewing and interacting on mobile, considering the different interaction methods between the two types of devices and the change in proportions and screen ratios.
 
 #### Coding challenges
-<br>
-Coding wise one of the challenges was linked to the usage of the timer function and all the other functions linked to it. A variable neexed to be passed from a webpage to another, and certain functions needed to be called when the timer reached a certain amount.<br>
 
-Another coding issues we ran into was linked to the pixel density of mobile screens. When the game was displayed vertically on a smartphone, p5 interpreted the canvas as made up by a larger amount of pixels, and therefore the pieces of pasta looked like they were falling in slow-motion. We solved this issue by creating an if statement that handled the physics of the pieces of pasta according to the proportions and the ration of the screen
+Coding-wise one of the challenges was linked to the usage of the timer function and all the other functions linked to it. A variable needed to be passed from a webpage to another, and certain functions needed to be called when the timer reached a certain amount, like the calling of the curtain function, when a match ends and it consequent fall and deletion. We solved this specific issue by deleting the curtain scene and then re-creating it at the end of each round!<br>
+
+Another coding issues we ran into, was linked to the pixel density of mobile screens. When the game was displayed vertically on a smartphone, p5 interpreted the canvas as made up by a very large amount of pixels vertically, and therefore the pieces of pasta looked like they were falling in slow-motion. We solved this issue by creating an if-statement that handled the physics of the pieces of pasta according to the proportions and the ratio of the screen.
+
+
 
 We used Mapbox for the main part of the WebApp. To intergrate Mapbox GL inside p5.js we used a library called [mappa.js](https://mappa.js.org), a tool that facilitates work between the canvas elements and the existing map libraries and APIs.
 We slightly changed mappa.js to add a gps button that helps the user to go back to his position:
