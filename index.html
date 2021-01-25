@@ -43,7 +43,7 @@
 
 
 <!-- ANIMATED BACKGROUND -->
-<!-- <div id="animated-background" style="width: 100vw; height: 200vh; z-index: -50; position: absolute; top: 0; left: 0"></div> -->
+<image id="animated-background" src="assets/img/homepage-animation.png"></image>
 
 
 <!-- TEXT CONTENT -->
@@ -185,5 +185,32 @@
     smoothScrolling=true
   );
 	</script>
+
+  <script>
+  let scroll = false;
+
+  $(window).scroll( function(){
+  if (scroll === false) {
+  $("#animated-background").attr("src","assets/img/homepage-animation.gif");
+}
+  scroll = true;
+})
+  </script>
+
+  <script>
+  let scrollMobile = false;
+
+if (window.innerWidth < 992) {
+  $("#animated-background").attr("src","assets/img/homepage-animation-mp.png");
+
+$(window).scroll( function() {
+if (scrollMobile === false) {
+$("#animated-background").attr("src","assets/img/homepage-animation-mp.gif");
+}
+scroll = true;
+})
+}
+  </script>
+
 </body>
 </html>
