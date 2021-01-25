@@ -18,9 +18,9 @@ d. [About](#about)<br>
 e. [Ranking](#ranking)<br>
 f. [Thank you page](#thank-you-page)<br>
 3. [The Code](#the-code)<br>
-a. [Tools](#tools)<br>
-b. [Design challenges](#design-challenges)<br>
-c. [Coding challenges](#coding-challenges)<br>
+a. [Design challenges](#design-challenges)<br>
+b. [Coding challenges](#coding-challenges)<br>
+c. [Tools](#tools)<br>
 4. [Team](#team)<br>
 
 ## Project idea
@@ -71,13 +71,6 @@ This page is reachable through the waiting room, the user can visit it when they
 ## The Code
 The app was built mostly in [p5.js](https://p5js.org/). The library [matter.js](https://brm.io/matter-js/) was used to render the mechanics of the pieces of pasta falling from above.
 
-#### Tools
-* [p5.js](https://p5js.org/)
-* [matter.js](https://brm.io/matter-js/)
-* [JQuery](https://jquery.com/)
-* [skrollr.js](https://github.com/Prinzhorn/skrollr)
-* [three.js](https://threejs.org/)
-
 #### Design challenges
 One of the design challenges was creating a web app that was true to our vision of a simple, brutalist website with a cool graphic setup and a conscious and punctual use of colour.<br>
 The core idea was to create a cool engaging web experience regardless of the simplicity of the chosen topic.<br>
@@ -91,9 +84,10 @@ Despite the overall minimalistic style choice, we wanted to include some playful
 * the red news ticker-like red banner. In the homepage it displays some Italian expressions about food, that were literally translated into English, mantaining a questionable syntax. In the page of the poll, it displays the number of users online and the result of the previous match.
 * the picture of the typical Italian "mano a busta", in the "About" section, that rotates and mimics the hand gesture on hover, and displays the names of the team members and of the professors on click.
 * the textual and graphic elements in the "Thank you" page.<br>
-![illustyles](links/graphics.gif)
-From the perspective of HTML and CSS design, it wasn't easy to fit all of the information in as few HTML documents as possible.<br>
-It also wasn't easy to make the website responsive for viewing and interacting on mobile, considering the different interaction methods between the two types of devices and the change in proportions and screen ratios.
+![graphics](links/graphics.gif)
+<br>
+From the perspective of HTML and CSS design, it wasn't easy to fit all of the information in as few HTML documents as possible. This required the generation and management of several hidden overlays.<br>
+It also wasn't easy to make the website responsive for viewing and interacting on mobile, considering the different interaction methods between the two types of devices and the change in proportions and screen ratios. This required the generation of many different stylesheets.
 
 #### Coding challenges
 
@@ -180,6 +174,13 @@ setTimeout(function() {
 ```
 In general we used mostly p5.js to handle events but for graphics and animations we used JQuery and CSS as it's easier to use these to make more fluid and dynamic animations.
 
+
+#### Tools
+* [p5.js](https://p5js.org/)
+* [matter.js](https://brm.io/matter-js/)
+* [JQuery](https://jquery.com/)
+* [skrollr.js](https://github.com/Prinzhorn/skrollr)
+* [three.js](https://threejs.org/)
 
 ## Team
 * [Martina Bracchi](mailto:martinabracchi.mb@gmail.com)  
