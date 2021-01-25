@@ -48,7 +48,7 @@ The purpose of this section is to entertain the user until the start of a new ma
 #### Waiting room
 The waiting room is a 5-second-long transitional phase between a match and another.<br>
 A truly Italian-stereotype-style red checkered tablecloth flutters on the screen and falls at the end of the timer, uncovering the actual poll. During this phase, online users can see each other's cursors, in the form of forks, and therefore understand how many players are online with them at that moment.<br>
-If one is tired to play, there is a button that leads to the [thank you page](#thank-you-page).<br>
+If one is tired to play, there is a button that leads to the ["Thank you" page](#thank-you-page).<br>
 The tablecloth is a 3D object built in [three.js](https://threejs.org/), which was taken from [Memetic Warfare Archive](https://densitydesign.github.io/teaching-dd15/course-results/es03/group03/).
 
 #### Poll
@@ -87,14 +87,20 @@ One of the challenges that came up during the illustration process was making su
 ![illustyles](links/illustyles.png)
 <br>
 <br>
+Despite the overall minimalistic style choice, we wanted to include some playful elements like:
+* the red news ticker-like red banner. In the homepage it displays some Italian expressions about food, that were literally translated into English, mantaining a questionable syntax. In the page of the poll, it displays the number of users online and the result of the previous match.
+* the picture of the typical Italian "mano a busta", in the "About" section, that rotates and mimics the hand gesture on hover, and displays the names of the team members and of the professors on click.
+* the textual and graphic elements in the "Thank you" page.
 From the perspective of HTML and CSS design it wasn't easy to fit all of the information in as few HTML documents as possible.<br>
 It also wasn't easy to make the website responsive for viewing and interacting on mobile, considering the different interaction methods between the two types of devices and the change in proportions and screen ratios.
 
 #### Coding challenges
-<br>
-Coding wise one of the challenges was linked to the usage of the timer function and all the other functions linked to it. A variable neexed to be passed from a webpage to another, and certain functions needed to be called when the timer reached a certain amount.<br>
 
-Another coding issues we ran into was linked to the pixel density of mobile screens. When the game was displayed vertically on a smartphone, p5 interpreted the canvas as made up by a larger amount of pixels, and therefore the pieces of pasta looked like they were falling in slow-motion. We solved this issue by creating an if statement that handled the physics of the pieces of pasta according to the proportions and the ration of the screen
+Coding-wise one of the challenges was linked to the usage of the timer function and all the other functions linked to it. A variable needed to be passed from a webpage to another, and certain functions needed to be called when the timer reached a certain amount, like the calling of the curtain function, when a match ends and it consequent fall and deletion. We solved this specific issue by deleting the curtain scene and then re-creating it at the end of each round!<br>
+
+Another coding issues we ran into, was linked to the pixel density of mobile screens. When the game was displayed vertically on a smartphone, p5 interpreted the canvas as made up by a very large amount of pixels vertically, and therefore the pieces of pasta looked like they were falling in slow-motion. We solved this issue by creating an if-statement that handled the physics of the pieces of pasta according to the proportions and the ratio of the screen.
+
+
 
 We used Mapbox for the main part of the WebApp. To intergrate Mapbox GL inside p5.js we used a library called [mappa.js](https://mappa.js.org), a tool that facilitates work between the canvas elements and the existing map libraries and APIs.
 We slightly changed mappa.js to add a gps button that helps the user to go back to his position:
