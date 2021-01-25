@@ -1,8 +1,4 @@
-- Concept of your project. Where does your idea come from? What is you communication aim? What is the context of use of your project? What devices are part of the experience?
-- Design challenges. Which were the most challenging aspects of your project, design-wise? How did you solve your design problems? Document this part with images, schemas, diagrams and screenshots from the prototype.
-- Coding challenges. Which were the most challenging aspects of your project, coding-wise? How did you solve your coding problems? Document this part with code snippets, links to tutorials you followed or resources you found online.
-
-![heading](./links/heading.png)
+![alt tag](links/heading.png)
 
 ## About
 "Pasta Chute" is a virtual common space built on [p5.js](https://p5js.org) that aims to connect people thanks to a topic of general interest: pasta.
@@ -23,8 +19,8 @@ e. [Ranking](#ranking)<br>
 f. [Thank you page](#thank-you-page)<br>
 3. [The Code](#the-code)<br>
 a. [Tools](#tools)<br>
-b. [Coding challenges](#coding-challenges)<br>
-c. [Design challenges](#design-challenges)<br>
+b. [Design challenges](#design-challenges)<br>
+c. [Coding challenges](#coding-challenges)<br>
 4. [Team](#team)<br>
 
 ## Project idea
@@ -47,7 +43,7 @@ The homepage is designed to welcome the user and to prepare them to the fast dyn
 Once they are ready to enter the game, the user clicks on a button and a pop-up appears that counts down the time remaining to the end of the current match (max. 15 seconds).<br>
 The purpose of this section is to entertain the user until the start of a new match, so that they don't find themselves in the middle of a duel that has already started. It contains a mini-game: pieces of pasta falling from above and a colander that can be moved to catch as many pieces as possible.
 
-![home](./links/home.gif)
+![homepage](links/HOME.gif)
 
 #### Waiting room
 The waiting room is a 5-second-long transitional phase between a match and another.<br>
@@ -63,7 +59,7 @@ Each match last 15 seconds. The short duration makes the single contest very qui
 The section "About" is a hidden overlay that slides over the screen from the left, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
 It contains information about the project and the elective course. A click on the symbol of the typical Italian hand gesture "mano a borsa" displays the names of the team members and of the professors.
 
-![about](./links/home.gif)
+![about](links/ABOUT.gif)
 
 #### Ranking
 The section "Ranking" is a hidden overlay that slides over the screen from the right, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
@@ -82,15 +78,19 @@ The app was built mostly in [p5.js](https://p5js.org/). The library [matter.js](
 * [skrollr.js](https://github.com/Prinzhorn/skrollr)
 * [three.js](https://threejs.org/)
 
-#### Coding challenges
-(...)
-
 #### Design challenges
-(...)
-- responsive
-- non lo so
+One of the design challenges was creating a web app that was true to our vision of a simple, brutalist website with a cool graphic setup and a conscious and punctual use of colour.<br>
+The core idea was to create a cool engaging web experience regardless of the simplicity of the chosen topic.<br>
+From the get-go we had a clear idea of how the app should look like from the typographical point of view: the juxtaposition of a bold grotesk font and an italic serif. The idea was to pair the textual elements with illustrations of the various formats of pasta, drawn in a "wireframe" style.<br>
+One of the challenges that came up during the illustration process was making sure they looked in line with the rest of the website, not being too organically realistic - which would clash with the overall look - or geometrically rigid, which would make the pieces look stiff when falling and piling up.<br>
+<br>
+![illustyles](links/illustyles.png)
+<br>
+<br>
+From the perspective of HTML and CSS design it wasn't easy to fit all of the information in as few HTML documents as possible.<br>
+It also wasn't easy to make the website responsive for viewing and interacting on mobile, considering the different interaction methods between the two types of devices and the change in proportions and screen ratios.
 
-(Questa parte viene da un altro read-me, vediamo come inserire parti di codice)
+#### Coding challenges
 
 We used Mapbox for the main part of the WebApp. To intergrate Mapbox GL inside p5.js we used a library called [mappa.js](https://mappa.js.org), a tool that facilitates work between the canvas elements and the existing map libraries and APIs.
 We slightly changed mappa.js to add a gps button that helps the user to go back to his position:
