@@ -18,9 +18,9 @@ d. [About](#about)<br>
 e. [Ranking](#ranking)<br>
 f. [Thank you page](#thank-you-page)<br>
 3. [The Code](#the-code)<br>
-a. [Tools](#tools)<br>
-b. [Design challenges](#design-challenges)<br>
-c. [Coding challenges](#coding-challenges)<br>
+a. [Design challenges](#design-challenges)<br>
+b. [Coding challenges](#coding-challenges)<br>
+c. [Tools](#tools)<br>
 4. [Team](#team)<br>
 
 ## Project idea
@@ -40,7 +40,7 @@ Friends can arrange to visit the website at the same time to play together or ag
 ## Structure
 #### Homepage
 The homepage is designed to welcome the user and to prepare them to the fast dynamics of the poll. The library [skrollr](https://github.com/Prinzhorn/skrollr) was used to display a sequence of very concise information about the attitude they need to take on: be fierce, be fast and ready to click.<br>
-Once they are ready to enter the game, the user clicks on a button and a pop-up appears that counts down the time remaining to the end of the current match, for a maximum of 30 seconds.<br>
+Once they are ready to enter the game, the user clicks on a button and a pop-up appears that counts down the time remaining to the end of the current match (max. 15 seconds).<br>
 The purpose of this section is to entertain the user until the start of a new match, so that they don't find themselves in the middle of a duel that has already started. It contains a mini-game: pieces of pasta falling from above and a colander that can be moved to catch as many pieces as possible.
 
 ![homepage](links/HOME.gif)
@@ -53,7 +53,7 @@ The tablecloth is a 3D object built in [three.js](https://threejs.org/), which w
 
 #### Poll
 The poll works in a very simple way. The screen is split in two halves; each side houses each round a different type of pasta. The user needs to place their mouse (or their finger) on the side they want to vote for, and click (or tap) as many times as possible to make it win. Each click generates a piece of the chosen pasta in that position of the screen, this then falls on the ground and piling up on the others, thanks to the mechanics of [matter.js](https://brm.io/matter-js/). This visual representation makes it very easy to understand what pasta is winning and the contribution of the other users, who are generating pasta on the other side of the screen.<br>
-Each match last 20 seconds. The short duration makes the single contest very quick and ephemeral, but all results contribute to the overall ranking.
+Each match last 15 seconds. The short duration makes the single contest very quick and ephemeral, but all results contribute to the overall ranking.
 
 #### About
 The section "About" is a hidden overlay that slides over the screen from the left, when triggered by clicking (or tapping on) the corresponding button in the header.<br>
@@ -71,13 +71,6 @@ This page is reachable through the waiting room, the user can visit it when they
 ## The Code
 The app was built mostly in [p5.js](https://p5js.org/). The library [matter.js](https://brm.io/matter-js/) was used to render the mechanics of the pieces of pasta falling from above.
 
-#### Tools
-* [p5.js](https://p5js.org/)
-* [matter.js](https://brm.io/matter-js/)
-* [JQuery](https://jquery.com/)
-* [skrollr.js](https://github.com/Prinzhorn/skrollr)
-* [three.js](https://threejs.org/)
-
 #### Design challenges
 One of the design challenges was creating a web app that was true to our vision of a simple, brutalist website with a cool graphic setup and a conscious and punctual use of colour.<br>
 The core idea was to create a cool engaging web experience regardless of the simplicity of the chosen topic.<br>
@@ -91,11 +84,10 @@ Despite the overall minimalistic style choice, we wanted to include some playful
 * the red news ticker-like red banner. In the homepage it displays some Italian expressions about food, that were literally translated into English, mantaining a questionable syntax. In the page of the poll, it displays the number of users online and the result of the previous match.
 * the picture of the typical Italian "mano a busta", in the "About" section, that rotates and mimics the hand gesture on hover, and displays the names of the team members and of the professors on click.
 * the textual and graphic elements in the "Thank you" page.<br>
-<br>
 ![graphics](links/graphics.gif)
 <br>
 From the perspective of HTML and CSS design, it wasn't easy to fit all of the information in as few HTML documents as possible. This required the generation and management of several hidden overlays.<br>
-It also wasn't easy to make the website responsive for viewing and interacting on mobile, considering the different interaction methods between the two types of devices and the change in proportions and screen ratios.
+It also wasn't easy to make the website responsive for viewing and interacting on mobile, considering the different interaction methods between the two types of devices and the change in proportions and screen ratios. This required the generation of many different stylesheets.
 
 #### Coding challenges
 
@@ -182,6 +174,13 @@ setTimeout(function() {
 ```
 In general we used mostly p5.js to handle events but for graphics and animations we used JQuery and CSS as it's easier to use these to make more fluid and dynamic animations.
 
+
+#### Tools
+* [p5.js](https://p5js.org/)
+* [matter.js](https://brm.io/matter-js/)
+* [JQuery](https://jquery.com/)
+* [skrollr.js](https://github.com/Prinzhorn/skrollr)
+* [three.js](https://threejs.org/)
 
 ## Team
 * [Martina Bracchi](mailto:martinabracchi.mb@gmail.com)  
