@@ -186,7 +186,7 @@
   );
 	</script>
 
-  <script>
+<script>
   let scroll = false;
 
   $(window).scroll( function(){
@@ -195,12 +195,10 @@
 }
   scroll = true;
 })
-  </script>
 
-  <script>
   let scrollMobile = false;
 
-if (window.innerWidth < 992) {
+if (window.innerWidth < 992 && window.innerWidth > window.innerHeight) {
   $("#animated-background").attr("src","assets/img/homepage-animation-mp.png");
 
 $(window).scroll( function() {
@@ -210,7 +208,7 @@ $("#animated-background").attr("src","assets/img/homepage-animation-mp.gif");
 scroll = true;
 })
 }
-  </script>
+</script>
 
 </body>
 </html>
