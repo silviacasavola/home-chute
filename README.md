@@ -32,7 +32,7 @@ The creative process is very similar to the one of memes, as it starts from pick
 
 
 #### Context of use
-The project is addressed to a broad target audience, but it's expected to spark interest and hopefully mostly among young people.<br>
+The project is addressed to a broad target audience, but it's expected to spark interest mostly among young people.<br>
 The game is always ongoing and there are no special events, so that people can jump in, fool around and browse the app whenever they want. This is why it was very important for us to make the game suitable for both computers and mobile devices.<br>
 Friends can arrange to visit the website at the same time to play together or against each other, but one can also play alone, fooling around, asking themselves what pasta they prefer, discovering new types and formats, learning new informations about pasta, and browsing the game records.
 
