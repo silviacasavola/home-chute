@@ -34,7 +34,7 @@ The creative process is very similar to the one of memes, as it starts from pick
 #### Context of use
 The project is addressed to a broad target audience, but it's expected to spark interest mostly among young people.<br>
 The game is always ongoing and there are no special events, so that people can jump in, fool around and browse the app whenever they want. This is why it was very important for us to make the game suitable for both computers and mobile devices.<br>
-Friends can arrange to visit the website at the same time to play together or against each other, but one can also play alone, fooling around, asking themselves what pasta they prefer, discovering new types and formats, learning new informations about pasta, and browsing the game records.
+Friends can arrange to visit the website at the same time to play together or against each other, but one can also play alone, fooling around, asking themselves what pasta they prefer, discovering new types and formats, learning new information about pasta, and browsing the game records.
 
 
 ## Structure
@@ -91,6 +91,10 @@ From the perspective of HTML and CSS design it wasn't easy to fit all of the inf
 It also wasn't easy to make the website responsive for viewing and interacting on mobile, considering the different interaction methods between the two types of devices and the change in proportions and screen ratios.
 
 #### Coding challenges
+<br>
+Coding wise one of the challenges was linked to the usage of the timer function and all the other functions linked to it. A variable neexed to be passed from a webpage to another, and certain functions needed to be called when the timer reached a certain amount.<br>
+
+Another coding issues we ran into was linked to the pixel density of mobile screens. When the game was displayed vertically on a smartphone, p5 interpreted the canvas as made up by a larger amount of pixels, and therefore the pieces of pasta looked like they were falling in slow-motion. We solved this issue by creating an if statement that handled the physics of the pieces of pasta according to the proportions and the ration of the screen
 
 We used Mapbox for the main part of the WebApp. To intergrate Mapbox GL inside p5.js we used a library called [mappa.js](https://mappa.js.org), a tool that facilitates work between the canvas elements and the existing map libraries and APIs.
 We slightly changed mappa.js to add a gps button that helps the user to go back to his position:
