@@ -20,7 +20,7 @@
   width: 100%;
 }
 
-#animated-background {width: 50vw; z-index: -50; position: fixed; left: 0; bottom: 0}
+#animated-background {width: 60vw; z-index: -50; position: fixed; left: 20vw; bottom: 0}
 
 .paragraph {
   width: 100%;
