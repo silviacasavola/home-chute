@@ -198,8 +198,9 @@
 
   let scrollMobile = false;
 
-if (window.innerWidth < 992 && window.innerWidth > window.innerHeight) {
+if (window.innerWidth < 992) {
   $("#animated-background").attr("src","assets/img/homepage-animation-mp.png");
+  console.log("yes")
 
 $(window).scroll( function() {
 if (scrollMobile === false) {
